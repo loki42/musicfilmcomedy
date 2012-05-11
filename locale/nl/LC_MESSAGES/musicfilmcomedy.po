@@ -1,0 +1,292 @@
+# Dutch translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-04-04 17:44+1000\n"
+"PO-Revision-Date: 2012-04-01 20:06+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: templates/act.html:9
+#, fuzzy, python-format
+msgid ""
+"festival appearances for %s in 2012. Reviews, info and recommendations."
+msgstr ""
+"Festival optredens voor %s in 2012. Beoordelingen, informatie en "
+"aanbevelingen."
+
+#: templates/act.html:10
+#, python-format
+msgid "%s | Festival Tour Dates 2012"
+msgstr "%s | Festival tourdata 2012"
+
+#: templates/act.html:14 templates/festival.html:17
+msgid "Flag incorrect information"
+msgstr "Vlag onjuiste informatie"
+
+#: templates/act.html:34 templates/act.html:37
+msgid "unknown"
+msgstr "onbekend"
+
+#: templates/act.html:43
+msgid "Back"
+msgstr "Terug"
+
+#: templates/act.html:93
+#, python-format
+msgid "%s is on at:"
+msgstr "%s is op:"
+
+#: templates/act.html:166
+msgid "What people on twitter think"
+msgstr "Denk wat mensen op twitter"
+
+#: templates/base.html:60 templates/list_countries.html:5
+msgid "List By Country"
+msgstr "Lijst per land"
+
+#: templates/base.html:65
+msgid "Search"
+msgstr "Zoek"
+
+#: templates/base.html:69
+msgid "Feedback"
+msgstr "Feedback"
+
+#: templates/base.html:72
+msgid "Language"
+msgstr "Taal"
+
+#: templates/base.html:83
+msgid "Other"
+msgstr "Andere"
+
+#: templates/choose_language.html:2 templates/index.html:2
+#: templates/list_countries.html:2
+#: templates/list_festivals_from_country.html:2
+#: templates/search_festivals.html:2
+msgid ""
+"Music Film Comedy helps you decide what to see at a festival with great "
+"recommendations and info."
+msgstr ""
+"Muziek Film Comedy helpt u beslissen wat te zien op een festival met grote "
+"aanbevelingen en info."
+
+#: templates/choose_language.html:3
+#, fuzzy
+msgid "Choose Language | The Best Act/Film Recommendations"
+msgstr "Zoek Festivals | De beste wet/Film aanbevelingen"
+
+#: templates/choose_language.html:5
+msgid "Choose Language"
+msgstr "Kies taal"
+
+#: templates/festival.html:10 templates/recommend_acts.html:2
+#: templates/recommended_acts.html:2
+#, python-format
+msgid ""
+"Plan and get recommendations for what to see at %s. See reviews, lineup and "
+"act info."
+msgstr ""
+"Plan en krijg aanbevelingen voor wat te zien op %s. Zie beoordelingen, line-"
+"up en act info."
+
+#: templates/festival.html:11
+#, python-format
+msgid "%s | recommendations, reviews, line up and dates"
+msgstr "%s | aanbevelingen, beoordelingen, lijn tot en datums"
+
+#: templates/festival.html:42
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s."
+msgstr "We hebben niet de exacte data nog, maar het is meestal in %s."
+
+#: templates/festival.html:44
+#, python-format
+msgid "We don't have dates for %s yet."
+msgstr "We hebben geen data voor %s nog."
+
+#: templates/festival.html:51
+msgid "Recommend Acts"
+msgstr "Aanbevolen handelingen"
+
+#: templates/festival.html:56
+msgid "Recommend For Today"
+msgstr "Aanbevelen voor vandaag"
+
+#: templates/festival.html:59
+#, python-format
+msgid "We don't have a lineup for %s yet."
+msgstr "We hebben nog een line-up voor %s niet."
+
+#: templates/festival.html:72
+msgid "Lineup:"
+msgstr "Line-up:"
+
+#: templates/index.html:3
+msgid "MusicFilmComedy - Festivals and The Best Act/Film Recommendations"
+msgstr "MusicFilmComedy - Festivals en de beste Act/Film aanbevelingen"
+
+#: templates/index.html:6
+msgid "Featured Festival"
+msgstr "Aanbevolen Festival"
+
+#: templates/index.html:9
+msgid "MusicFilmComedy allows you to find and plan what to see at a festival."
+msgstr "MusicFilmComedy kunt u vinden en plan wat te zien op een festival."
+
+#: templates/index.html:12
+msgid "e.g. summerfest, france, blues"
+msgstr "bijvoorbeeld summerfest, Frankrijk, blues"
+
+#: templates/index.html:13
+msgid "Search Festivals"
+msgstr "Zoek Festivals"
+
+#: templates/index.html:16
+msgid ""
+"Please give us feedback if you find issues! We are still testing and would "
+"love any ideas or suggestions."
+msgstr ""
+"Geef ons feedback als u problemen vinden! We zijn nog steeds testen en zou "
+"graag ideeën of suggesties."
+
+#: templates/index.html:22
+msgid "Upcoming Nearby Festivals"
+msgstr "Aankomende nabijgelegen Festivals"
+
+#: templates/index.html:26
+msgid "Other Featured Festivals"
+msgstr "Andere Featured Festivals"
+
+#: templates/index.html:38
+msgid "Upcoming Festivals"
+msgstr "Aankomende Festivals"
+
+#: templates/index.html:46
+msgid "Popular Acts"
+msgstr "Populaire handelingen"
+
+#: templates/list_countries.html:3
+#: templates/list_festivals_from_country.html:3
+#, fuzzy
+msgid "List Festivals By Country | The Best Act/Film Recommendations"
+msgstr "Zoek Festivals | De beste wet/Film aanbevelingen"
+
+#: templates/list_festivals_from_country.html:19
+#: templates/search_festivals.html:30
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s"
+msgstr "We hebben niet de exacte data nog, maar het is meestal in %s"
+
+#: templates/list_festivals_from_country.html:28
+#: templates/recommended_acts.html:23 templates/search_festivals.html:39
+msgid "View details"
+msgstr "Weergave details"
+
+#: templates/recommend_acts.html:3
+#, python-format
+msgid "%s | Enter your preferences or get magical recommendations"
+msgstr "%s | Geef uw voorkeuren of magische aanbevelingen krijgen"
+
+#: templates/recommend_acts.html:7
+#, python-format
+msgid "Magical Recommendations for %s. "
+msgstr "Magische aanbevelingen voor %s. "
+
+#: templates/recommend_acts.html:9
+#, python-format
+msgid ""
+"Click the big button to get our recommendations for %s. Our recommendations "
+"are based on a magic mixture of popularity (facebook/twitter/web) and "
+"reviews."
+msgstr ""
+"Klik op de grote knop om onze aanbevelingen voor %s. Onze aanbevelingen zijn"
+" gebaseerd op een magische mix van populariteit (facebook/twitter/web) en "
+"Beoordelingen."
+
+#: templates/recommend_acts.html:10
+msgid "Magical"
+msgstr "Magische"
+
+#: templates/recommend_acts.html:11
+msgid "or"
+msgstr "of"
+
+#: templates/recommend_acts.html:12
+msgid "choose your preferences."
+msgstr "Kies uw voorkeuren."
+
+#: templates/recommend_acts.html:19
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: templates/recommend_acts.html:22
+msgid "Genres you are interested in:"
+msgstr "Genres die u geïnteresseerd bent in:"
+
+#: templates/recommend_acts.html:36
+msgid "Days:"
+msgstr "Dagen:"
+
+#: templates/recommend_acts.html:48
+msgid "We don't have enough data about this festival to provide preferences."
+msgstr "We hebben niet genoeg gegevens over dit festival om voorkeuren."
+
+#: templates/recommend_acts.html:53
+msgid "Magically with your preferences"
+msgstr "Magische wijze met uw voorkeuren"
+
+#: templates/recommended_acts.html:3
+#, python-format
+msgid "%s | Recommendations"
+msgstr "%s | Aanbevelingen"
+
+#: templates/recommended_acts.html:6
+#, python-format
+msgid "Recommended Acts for %s."
+msgstr "Aanbevolen handelingen voor %s."
+
+#: templates/recommended_acts.html:8
+msgid ""
+"Click on the acts to get the times, we're making this nicer at the moment "
+"and will have something better up soon."
+msgstr ""
+"Klik op de handelingen om de tijden, we dit mooier maakt op dit moment en "
+"iets beter omhoog snel zal hebben."
+
+#: templates/search_festivals.html:3
+msgid "Search Festivals | The Best Act/Film Recommendations"
+msgstr "Zoek Festivals | De beste wet/Film aanbevelingen"
+
+#: templates/search_festivals.html:7
+msgid "Search Results"
+msgstr "Zoekresultaten"
+
+#: templates/search_festivals.html:13
+msgid ""
+"No festivals found. We are trying to add more festivals all the time. If you"
+" have details for a festival that you think we should have please contact us"
+msgstr ""
+"Geen festivals gevonden. Wij probeert toe te voegen meer festivals hele "
+"tijd. Als u details voor een festival dat je denkt dat we moeten hebben "
+"gelieve ons te contacteren"
+
+#: templates/search_festivals.html:49
+msgid "Previous"
+msgstr "Vorige"
+
+#: templates/search_festivals.html:54
+msgid "Next"
+msgstr "Volgende"

@@ -1,0 +1,43 @@
+<%inherit file="base.html"/>
+     
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="hero-unit">
+  <h1>
+      <label for="mysearch2">Find festival: </label>
+      <input id="mysearch2" type="search" placeholder="e.g., summerfest, in france, blues, ...">
+  </h1>
+    <p>Music Film Comedy allows you to plan what you're going to see at a festival. </p>
+    <p>Select acts manually or make life easier using our magic selector based on what is popular, what your friend</p>
+    <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+</div>
+
+<!-- Example row of columns -->
+<div class="row">
+  <div class="span4">
+    <h2>Popular Festivals</h2>
+       <p class="star_sep">
+       % for festival in festivals:
+       <a href="#">${festival}</a>
+       % endfor
+       </p>
+  <p><a class="btn" href="#">View details &raquo;</a></p>
+</div>
+<div class="span4">
+    <h2>Popular Regions</h2>
+       <p class="star_sep">
+       % for region in regions:
+       <a href="#">${region}</a>
+       % endfor
+       </p>
+  <p><a class="btn" href="#">View details &raquo;</a></p>
+</div>
+<div class="span4">
+    <h2>Popular Acts</h2>
+       <p class="star_sep">
+       % for act in acts:
+       <a href="#">${act}</a>
+       % endfor
+       </p>
+  <p><a class="btn" href="#">View details &raquo;</a></p>
+</div>
+

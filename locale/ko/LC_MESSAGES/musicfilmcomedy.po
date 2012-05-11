@@ -1,0 +1,280 @@
+# Korean translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-04-04 17:44+1000\n"
+"PO-Revision-Date: 2012-04-01 20:31+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ko <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: templates/act.html:9
+#, fuzzy, python-format
+msgid ""
+"festival appearances for %s in 2012. Reviews, info and recommendations."
+msgstr "%s 대 한 2012 년에서 축제 외모입니다. 리뷰, 정보 및 권장 합니다."
+
+#: templates/act.html:10
+#, python-format
+msgid "%s | Festival Tour Dates 2012"
+msgstr "%s (ko) | 축제 투어 날짜 2012"
+
+#: templates/act.html:14 templates/festival.html:17
+msgid "Flag incorrect information"
+msgstr "플래그 잘못 된 정보"
+
+#: templates/act.html:34 templates/act.html:37
+msgid "unknown"
+msgstr "알 수 없는"
+
+#: templates/act.html:43
+msgid "Back"
+msgstr "뒤로"
+
+#: templates/act.html:93
+#, python-format
+msgid "%s is on at:"
+msgstr "%s 켜져:"
+
+#: templates/act.html:166
+msgid "What people on twitter think"
+msgstr "트위터에 무슨 사람들이 생각 하는"
+
+#: templates/base.html:60 templates/list_countries.html:5
+msgid "List By Country"
+msgstr "국가 목록"
+
+#: templates/base.html:65
+msgid "Search"
+msgstr "검색"
+
+#: templates/base.html:69
+msgid "Feedback"
+msgstr "피드백"
+
+#: templates/base.html:72
+msgid "Language"
+msgstr "언어"
+
+#: templates/base.html:83
+msgid "Other"
+msgstr "기타"
+
+#: templates/choose_language.html:2 templates/index.html:2
+#: templates/list_countries.html:2
+#: templates/list_festivals_from_country.html:2
+#: templates/search_festivals.html:2
+msgid ""
+"Music Film Comedy helps you decide what to see at a festival with great "
+"recommendations and info."
+msgstr "음악 영화 코미디를 사용 하면 훌륭한 권고 및 정보 축제에서 볼을 결정할 수 있습니다."
+
+#: templates/choose_language.html:3
+#, fuzzy
+msgid "Choose Language | The Best Act/Film Recommendations"
+msgstr "검색 축제 (ko) | 최고의 법/영화 추천"
+
+#: templates/choose_language.html:5
+msgid "Choose Language"
+msgstr "언어 선택"
+
+#: templates/festival.html:10 templates/recommend_acts.html:2
+#: templates/recommended_acts.html:2
+#, python-format
+msgid ""
+"Plan and get recommendations for what to see at %s. See reviews, lineup and "
+"act info."
+msgstr "계획 하 고 무엇을 %s 참조에 대 한 권고를 얻을. 참조 리뷰, 라인업 및 행동 정보."
+
+#: templates/festival.html:11
+#, python-format
+msgid "%s | recommendations, reviews, line up and dates"
+msgstr "%s (ko) | 추천, 리뷰, 선 고 날짜"
+
+#: templates/festival.html:42
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s."
+msgstr "우리는 아직 정확한 날짜를 필요 하지 않습니다 하지만 그것은 일반적으로 %s."
+
+#: templates/festival.html:44
+#, python-format
+msgid "We don't have dates for %s yet."
+msgstr "%s 대 한 날짜는 아직 없어요."
+
+#: templates/festival.html:51
+msgid "Recommend Acts"
+msgstr "추천 행위"
+
+#: templates/festival.html:56
+msgid "Recommend For Today"
+msgstr "오늘의 추천"
+
+#: templates/festival.html:59
+#, python-format
+msgid "We don't have a lineup for %s yet."
+msgstr "우리가 아직 %s 대 한 라인업을가지고 하지 않습니다."
+
+#: templates/festival.html:72
+msgid "Lineup:"
+msgstr "라인업:"
+
+#: templates/index.html:3
+msgid "MusicFilmComedy - Festivals and The Best Act/Film Recommendations"
+msgstr "MusicFilmComedy-축제와 최고의 법/영화 추천"
+
+#: templates/index.html:6
+msgid "Featured Festival"
+msgstr "주요 축제"
+
+#: templates/index.html:9
+msgid "MusicFilmComedy allows you to find and plan what to see at a festival."
+msgstr "Musicfilmcomedy를 사용 하면 찾기 및 축제에서 볼 무엇을 계획 수 있습니다."
+
+#: templates/index.html:12
+msgid "e.g. summerfest, france, blues"
+msgstr "예를 들어 summerfest, 프랑스, 블루스"
+
+#: templates/index.html:13
+msgid "Search Festivals"
+msgstr "검색 축제"
+
+#: templates/index.html:16
+msgid ""
+"Please give us feedback if you find issues! We are still testing and would "
+"love any ideas or suggestions."
+msgstr "제발 우리 문제를 찾을 경우 피드백을 줘! 우리는 아직도 테스트 하 고 어떤 아이디어 또는 제안 사랑 하는 것 이다."
+
+#: templates/index.html:22
+msgid "Upcoming Nearby Festivals"
+msgstr "곧 축제 근처"
+
+#: templates/index.html:26
+msgid "Other Featured Festivals"
+msgstr "기타 주요 축제"
+
+#: templates/index.html:38
+msgid "Upcoming Festivals"
+msgstr "다가오는 축제"
+
+#: templates/index.html:46
+msgid "Popular Acts"
+msgstr "인기 있는 행위"
+
+#: templates/list_countries.html:3
+#: templates/list_festivals_from_country.html:3
+#, fuzzy
+msgid "List Festivals By Country | The Best Act/Film Recommendations"
+msgstr "검색 축제 (ko) | 최고의 법/영화 추천"
+
+#: templates/list_festivals_from_country.html:19
+#: templates/search_festivals.html:30
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s"
+msgstr "우리는 아직 정확한 날짜를 필요 하지 않습니다 하지만 그것은 일반적으로 %s"
+
+#: templates/list_festivals_from_country.html:28
+#: templates/recommended_acts.html:23 templates/search_festivals.html:39
+msgid "View details"
+msgstr "세부 정보 보기"
+
+#: templates/recommend_acts.html:3
+#, python-format
+msgid "%s | Enter your preferences or get magical recommendations"
+msgstr "%s (ko) | 귀하의 기본 설정을 입력 하거나 마법의 추천"
+
+#: templates/recommend_acts.html:7
+#, python-format
+msgid "Magical Recommendations for %s. "
+msgstr "%s 대 한 마법의 권장 합니다. "
+
+#: templates/recommend_acts.html:9
+#, python-format
+msgid ""
+"Click the big button to get our recommendations for %s. Our recommendations "
+"are based on a magic mixture of popularity (facebook/twitter/web) and "
+"reviews."
+msgstr ""
+"%s 대 한 우리의 권고를 얻을 큰 버튼을 클릭 합니다. 우리의 권고 인기 (페이 스 북/트위터/웹) 및 리뷰의 마술 혼합을 기준으로 "
+"합니다."
+
+#: templates/recommend_acts.html:10
+msgid "Magical"
+msgstr "마법"
+
+#: templates/recommend_acts.html:11
+msgid "or"
+msgstr "또는"
+
+#: templates/recommend_acts.html:12
+msgid "choose your preferences."
+msgstr "기본 설정을 선택 합니다."
+
+#: templates/recommend_acts.html:19
+msgid "Preferences"
+msgstr "기본 설정"
+
+#: templates/recommend_acts.html:22
+msgid "Genres you are interested in:"
+msgstr "장르에 관심이 있다면:"
+
+#: templates/recommend_acts.html:36
+msgid "Days:"
+msgstr "날짜:"
+
+#: templates/recommend_acts.html:48
+msgid "We don't have enough data about this festival to provide preferences."
+msgstr "우리는 특혜를 제공 하기 위해이 축제에 대 한 충분 한 데이터를 필요가 없습니다."
+
+#: templates/recommend_acts.html:53
+msgid "Magically with your preferences"
+msgstr "기본 설정 된 마술"
+
+#: templates/recommended_acts.html:3
+#, python-format
+msgid "%s | Recommendations"
+msgstr "%s (ko) | 권장 사항"
+
+#: templates/recommended_acts.html:6
+#, python-format
+msgid "Recommended Acts for %s."
+msgstr "%s 대 한 행위를 권장 합니다."
+
+#: templates/recommended_acts.html:8
+msgid ""
+"Click on the acts to get the times, we're making this nicer at the moment "
+"and will have something better up soon."
+msgstr "클릭 시간 얻을 행위에 우리는이 좋네요 순간 만들고 위로 더 나은 뭔가 곧 할 것 이다."
+
+#: templates/search_festivals.html:3
+msgid "Search Festivals | The Best Act/Film Recommendations"
+msgstr "검색 축제 (ko) | 최고의 법/영화 추천"
+
+#: templates/search_festivals.html:7
+msgid "Search Results"
+msgstr "검색 결과"
+
+#: templates/search_festivals.html:13
+msgid ""
+"No festivals found. We are trying to add more festivals all the time. If you"
+" have details for a festival that you think we should have please contact us"
+msgstr ""
+"축제를 찾을 수 없습니다. 우리가 더 많은 축제 모든 시간을 추가 하려고 합니다. 만약 당신이 생각 하는 축제에 대 한 세부 정보를가지고"
+" 우리가 해야한다가지고 문의 하시기 바랍니다."
+
+#: templates/search_festivals.html:49
+msgid "Previous"
+msgstr "이전"
+
+#: templates/search_festivals.html:54
+msgid "Next"
+msgstr "다음"

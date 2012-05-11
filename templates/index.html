@@ -1,0 +1,53 @@
+<%inherit file="base.html" />
+<%def name="description()">${_('Music Film Comedy helps you decide what to see at a festival with great recommendations and info.')}</%def>
+<%def name="title()">${_('MusicFilmComedy - Festivals and The Best Act/Film Recommendations')}</%def>
+
+<div class="hero-unit">
+    <h2>${_('Featured Festival')}</h2>
+  <div class="page_header"><h1>
+	<a href="festival/${featured_festivals[0]['name'].replace(' ', '_') | u}">${featured_festivals[0]['name']}</a></h1></div>
+  <p>${_('MusicFilmComedy allows you to find and plan what to see at a festival.')}</p>
+  <h1>
+      <form action="/${lang}/search_festivals" class="form-search">
+          <input id="query" name="query" type="search" class="xlarge search-query"  placeholder="${_('e.g. summerfest, france, blues')}">
+          <button type="submit" class="btn btn-primary btn-large">${_('Search Festivals')}</button>
+      </form>
+  </h1>
+    <p class="well">${_('Please give us feedback if you find issues! We are still testing and would love any ideas or suggestions.')}</p>
+</div>    
+
+<div class="row">
+  <div class="span4">
+	<%
+		section_title = _('Upcoming Nearby Festivals')
+		context_festivals = nearby_festivals
+		
+		if len(context_festivals) == 0:
+			section_title = _('Other Featured Festivals')
+			context_festivals = featured_festivals
+	%>
+    <h2>${section_title}</h2>
+       <ol>
+       % for festival in context_festivals[:10]:
+       <li><a href="festival/${festival['name'].replace(' ', '_') | u}">${festival.get('name_in_locale') or festival['name']}</a></li>
+       % endfor
+       </ol>
+</div>
+<div class="row">
+    <div class="span4">
+        <h2>${_('Upcoming Festivals')}</h2>
+        <ol>
+            % for festival in festivals[:10]:
+                <li><a href="festival/${festival['name'].replace(' ', '_')  | u}">${festival.get('name_in_locale') or festival['name']}</a></li>
+            % endfor
+        </ol>
+    </div>
+    <div class="span4">
+        <h2>${_('Popular Acts')}</h2>
+           <ol>
+           % for act in acts[:10]:
+           <li><a href="act/${act['name'].replace(' ', '_')  | u}">${act.get('name_in_locale') or act['name']}</a></li>
+           % endfor
+           </ol>
+    </div>
+</div>

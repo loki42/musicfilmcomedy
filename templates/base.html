@@ -1,0 +1,193 @@
+##<%page cached="True" cache_key="${self.filename}"  cache_region="long_term"/>
+<%!
+def f_date(d):
+    return d.strftime('%A %d %B %Y')
+        
+import datetime, re
+
+def paragraphs(value):
+    """
+    Turns paragraphs delineated with newline characters into
+    paragraphs wrapped in <p> and </p> HTML tags.
+    """
+    if not value:
+        return ''
+    paras = re.split(r'[\r\n]+', value)
+    paras = ['<p>%s</p>' % p.strip() for p in paras]
+    return '\n'.join(paras)
+
+title_ = "ERROR Find festivals and get act/film recommendations"
+description_ = "ERROR Music. Film. Comedy helps you decide what to see at a festival."
+
+%>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="${lang}"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="${lang}"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="${lang}"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="${lang}" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>${self.title()}</title>
+	<meta name="description" content="${self.description()}">
+	<meta name="author" content="Gravity Four">
+	<meta name="google-site-verification" content="knl_2tHQEvIXX1WzhrI6grk71tqrs0KOaIWHiZwXdHE" />
+	<meta name="viewport" content="width=device-width">
+	##<link rel="stylesheet/less" href="/less/style.less">
+	##<script src="/js/libs/less-1.3.0.min.js"></script>
+	
+	##<!-- Use SimpLESS (Win/Linux/Mac) or LESS.app (Mac) to compile your .less files
+	##to style.css, and replace the 2 lines above by this one:-->
+	<link rel="stylesheet" href="/less/style.css">
+	
+	<script src="/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <%block name="header">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/${lang}/"><span class="music">Music.</span> <span class="film">Film.</span> <span class="comedy">Comedy.</span> </a>
+           <div class="nav-collapse"> 
+             <ul class="nav"> 
+                 <li>
+			% if current_user:
+				<a id="user-link" href="#"><strong>${current_user['full_name']}</strong></a>
+			% else:				
+				<a id="user-link" href="#"><strong>${_('Log In')}</strong></a>
+			% endif
+                 </li>
+		 % if current_user:
+		 <li><a href="/logout">Log out</a></li>
+		 % endif
+             </ul> 
+            <ul class="nav pull-right">
+                <li>
+                <form action="/${lang}/search_festivals" class="navbar-search">
+                      <input id="query" name="query" type="search" class="span3 search-query"  placeholder="${_('Search')}">
+                  </form>
+                </li>
+                <li class="divider-vertical"></li>
+                <li><a href="/${lang}/by_country">${_('List By Country')}</a></li>
+                <li><a href="mailto:feedback@musicfilmcomedy.com">${_('Feedback')}</a></li>
+                <li class="dropdown" id="menu1">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+                    ${_('Language')}
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/en/">English</a></li>
+                    <li><a href="/de/">Deutsch</a></li>
+                    <li><a href="/fr/">Français</a></li>
+                    <li><a href="/es/">Español</a></li>
+                    <li><a href="/ru/">Русский</a></li>
+                    <li><a href="/ja/">日本語</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/choose_language">${_('Other')}</a></li>
+                </ul>
+                </li>
+            </ul>
+
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+  </div>
+  </%block>
+
+  <div class="container">
+        ${self.body()}
+
+      <hr>
+    <%block name="footer">
+      <footer>
+        <a href="http://www.gravityfour.com">&copy; Gravity Four 2012</a>
+        </footer>
+    </%block>
+    </div> <!-- /container -->
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<!-- scripts concatenated and minified via ant build script-->
+<script src="/js/libs/bootstrap/transition.js"></script>
+<script src="/js/libs/bootstrap/collapse.js"></script>
+<script src="/js/libs/bootstrap/dropdown.js"></script>
+<script src="/js/libs/bootstrap/modal.js"></script>
+
+<script src="/js/libs/jquery.tweet.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/script.js"></script>
+ 
+<!-- facebook integration -->
+<div id="fb-root">	
+</div>
+
+<div id="fb-loader">
+</div>
+
+<script>
+% if current_user:
+    current_user = {
+	name : '${current_user['full_name']}',
+	facebook_id : '${current_user['fb_user_id']}',
+	email : '${current_user['email']}'
+    };
+% else:
+    current_user = null;
+% endif
+</script>
+
+<%block name="js">
+</%block>
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "ur-3b0c7755-534c-f64f-a600-8700c99e4348"}); </script>
+
+<script>
+	$(document).ready(function() {
+		mfc.initFacebook("#fb-loader");
+		$('#fb-loader').on('facebookReady', function() {
+			% if not current_user:
+				$("#user-link").click(function() {
+					mfc.createUserSession( {
+						success : function() { window.location.reload(true); }, 
+						error : function() { window.location.reload(true); } 
+					} );
+				});
+			% endif
+		});				
+	});
+</script>
+
+<!-- end scripts-->
+
+<script>
+	var _gaq=[['_setAccount','UA-30145434-1'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+</body>
+</html>
+
+<%def name="ad_top_right()">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3778021034134488";
+/* rec_top_right */
+google_ad_slot = "9467639410";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</%def>

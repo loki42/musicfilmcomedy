@@ -1,0 +1,285 @@
+# Hebrew translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-04-04 17:44+1000\n"
+"PO-Revision-Date: 2012-04-01 20:14+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: he <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: templates/act.html:9
+#, fuzzy, python-format
+msgid ""
+"festival appearances for %s in 2012. Reviews, info and recommendations."
+msgstr "הופעות הפסטיבל עבור %s ב- 2012. חוות דעת, מידע והמלצות."
+
+#: templates/act.html:10
+#, python-format
+msgid "%s | Festival Tour Dates 2012"
+msgstr "%s | תאריכי ההופעות בפסטיבל 2012"
+
+#: templates/act.html:14 templates/festival.html:17
+msgid "Flag incorrect information"
+msgstr "מידע שגוי של דגל"
+
+#: templates/act.html:34 templates/act.html:37
+msgid "unknown"
+msgstr "לא ידוע"
+
+#: templates/act.html:43
+msgid "Back"
+msgstr "גב"
+
+#: templates/act.html:93
+#, python-format
+msgid "%s is on at:"
+msgstr "%s נמצא ב:"
+
+#: templates/act.html:166
+msgid "What people on twitter think"
+msgstr "לחשוב מה אנשים בטוויטר"
+
+#: templates/base.html:60 templates/list_countries.html:5
+msgid "List By Country"
+msgstr "רשימה לפי מדינה"
+
+#: templates/base.html:65
+msgid "Search"
+msgstr "חיפוש"
+
+#: templates/base.html:69
+msgid "Feedback"
+msgstr "משוב"
+
+#: templates/base.html:72
+msgid "Language"
+msgstr "שפה"
+
+#: templates/base.html:83
+msgid "Other"
+msgstr "אחרים"
+
+#: templates/choose_language.html:2 templates/index.html:2
+#: templates/list_countries.html:2
+#: templates/list_festivals_from_country.html:2
+#: templates/search_festivals.html:2
+msgid ""
+"Music Film Comedy helps you decide what to see at a festival with great "
+"recommendations and info."
+msgstr ""
+"מוסיקה סרט קומדיה מסייע לך להחליט מה לראות בפסטיבל עם המלצות הגדול ואת פרטי."
+
+#: templates/choose_language.html:3
+#, fuzzy
+msgid "Choose Language | The Best Act/Film Recommendations"
+msgstr "חיפוש פסטיבלים | המלצות מעשה/הסרט הטוב ביותר"
+
+#: templates/choose_language.html:5
+msgid "Choose Language"
+msgstr "בחר שפה"
+
+#: templates/festival.html:10 templates/recommend_acts.html:2
+#: templates/recommended_acts.html:2
+#, python-format
+msgid ""
+"Plan and get recommendations for what to see at %s. See reviews, lineup and "
+"act info."
+msgstr "תכנון וקבל המלצות מה לראות ב- %s. ראו חוות דעת, מסדר, ויפעל פרטי."
+
+#: templates/festival.html:11
+#, python-format
+msgid "%s | recommendations, reviews, line up and dates"
+msgstr "%s | המלצות, חוות דעת, קו עד ותאריכים"
+
+#: templates/festival.html:42
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s."
+msgstr "אין לנו עדיין את התאריכים המדויקים, אבל זה בדרך כלל ב- %s."
+
+#: templates/festival.html:44
+#, python-format
+msgid "We don't have dates for %s yet."
+msgstr "אין לנו תאריכים עבור %s עדיין."
+
+#: templates/festival.html:51
+msgid "Recommend Acts"
+msgstr "ממליצים על מעשים"
+
+#: templates/festival.html:56
+msgid "Recommend For Today"
+msgstr "ממליצים היום"
+
+#: templates/festival.html:59
+#, python-format
+msgid "We don't have a lineup for %s yet."
+msgstr "עדיין אין לנו מסדר עבור %s."
+
+#: templates/festival.html:72
+msgid "Lineup:"
+msgstr "מסדר:"
+
+#: templates/index.html:3
+msgid "MusicFilmComedy - Festivals and The Best Act/Film Recommendations"
+msgstr "MusicFilmComedy - פסטיבלים והמלצות מעשה/הסרט הטוב ביותר"
+
+#: templates/index.html:6
+msgid "Featured Festival"
+msgstr "פסטיבל נבחרים"
+
+#: templates/index.html:9
+msgid "MusicFilmComedy allows you to find and plan what to see at a festival."
+msgstr "MusicFilmComedy מאפשר לך למצוא ולתכנן מה לראות בפסטיבל."
+
+#: templates/index.html:12
+msgid "e.g. summerfest, france, blues"
+msgstr "למשל summerfest, צרפת, בלוז"
+
+#: templates/index.html:13
+msgid "Search Festivals"
+msgstr "חיפוש פסטיבלים"
+
+#: templates/index.html:16
+msgid ""
+"Please give us feedback if you find issues! We are still testing and would "
+"love any ideas or suggestions."
+msgstr ""
+"נא לתת לנו משוב אם מצאת בעיות! אנו עדיין בדיקות, אשמח לרעיונות או הצעות "
+"כלשהן."
+
+#: templates/index.html:22
+msgid "Upcoming Nearby Festivals"
+msgstr "קרבות בקרבת מקום פסטיבלים"
+
+#: templates/index.html:26
+msgid "Other Featured Festivals"
+msgstr "השני מוצעים פסטיבלים"
+
+#: templates/index.html:38
+msgid "Upcoming Festivals"
+msgstr "פסטיבלים עתידיים"
+
+#: templates/index.html:46
+msgid "Popular Acts"
+msgstr "מעשים פופולרי"
+
+#: templates/list_countries.html:3
+#: templates/list_festivals_from_country.html:3
+#, fuzzy
+msgid "List Festivals By Country | The Best Act/Film Recommendations"
+msgstr "חיפוש פסטיבלים | המלצות מעשה/הסרט הטוב ביותר"
+
+#: templates/list_festivals_from_country.html:19
+#: templates/search_festivals.html:30
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s"
+msgstr "אין לנו עדיין את התאריכים המדויקים, אך הוא בדרך כלל ב- %s"
+
+#: templates/list_festivals_from_country.html:28
+#: templates/recommended_acts.html:23 templates/search_festivals.html:39
+msgid "View details"
+msgstr "הצגת פרטים"
+
+#: templates/recommend_acts.html:3
+#, python-format
+msgid "%s | Enter your preferences or get magical recommendations"
+msgstr "%s | הזן את העדפותיך או לקבל המלצות קסום"
+
+#: templates/recommend_acts.html:7
+#, python-format
+msgid "Magical Recommendations for %s. "
+msgstr "המלצות קסום עבור %s. "
+
+#: templates/recommend_acts.html:9
+#, python-format
+msgid ""
+"Click the big button to get our recommendations for %s. Our recommendations "
+"are based on a magic mixture of popularity (facebook/twitter/web) and "
+"reviews."
+msgstr ""
+"לחץ על לחצן גדול כדי לקבל המלצות שלנו עבור %s. ההמלצות שלנו מבוססים על "
+"תערובת הקסם של פופולריות (פייסבוק/טוויטר/אינטרנט) חוות דעת."
+
+#: templates/recommend_acts.html:10
+msgid "Magical"
+msgstr "קסום"
+
+#: templates/recommend_acts.html:11
+msgid "or"
+msgstr "או"
+
+#: templates/recommend_acts.html:12
+msgid "choose your preferences."
+msgstr "בחר את העדפותיך."
+
+#: templates/recommend_acts.html:19
+msgid "Preferences"
+msgstr "העדפות"
+
+#: templates/recommend_acts.html:22
+msgid "Genres you are interested in:"
+msgstr "ז'אנרים שהמעניינים אותך:"
+
+#: templates/recommend_acts.html:36
+msgid "Days:"
+msgstr "ימים:"
+
+#: templates/recommend_acts.html:48
+msgid "We don't have enough data about this festival to provide preferences."
+msgstr "אין לנו מספיק נתונים אודות הפסטיבל כדי לספק העדפות."
+
+#: templates/recommend_acts.html:53
+msgid "Magically with your preferences"
+msgstr "כמו קסם עם העדפותיך"
+
+#: templates/recommended_acts.html:3
+#, python-format
+msgid "%s | Recommendations"
+msgstr "%s | המלצות"
+
+#: templates/recommended_acts.html:6
+#, python-format
+msgid "Recommended Acts for %s."
+msgstr "מומלץ מעשי עבור %s."
+
+#: templates/recommended_acts.html:8
+msgid ""
+"Click on the acts to get the times, we're making this nicer at the moment "
+"and will have something better up soon."
+msgstr ""
+"לחץ על מעשי כדי לקבל את זמני, אנו עושים זאת יותר נעימים באותו הרגע, ויהיה "
+"משהו טוב יותר למעלה בקרוב."
+
+#: templates/search_festivals.html:3
+msgid "Search Festivals | The Best Act/Film Recommendations"
+msgstr "חיפוש פסטיבלים | המלצות מעשה/הסרט הטוב ביותר"
+
+#: templates/search_festivals.html:7
+msgid "Search Results"
+msgstr "תוצאות חיפוש"
+
+#: templates/search_festivals.html:13
+msgid ""
+"No festivals found. We are trying to add more festivals all the time. If you"
+" have details for a festival that you think we should have please contact us"
+msgstr ""
+"פסטיבלים לא נמצאו. אנו מנסים להוסיף פסטיבלים נוספים כל הזמן. אם יש לך פרטים "
+"עבור פסטיבל שלדעתך אנו צריכים יש אנא צור קשר"
+
+#: templates/search_festivals.html:49
+msgid "Previous"
+msgstr "הקודם"
+
+#: templates/search_festivals.html:54
+msgid "Next"
+msgstr "הבא"

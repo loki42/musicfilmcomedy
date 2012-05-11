@@ -1,0 +1,258 @@
+@import "bootstrap/bootstrap.less";
+
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+@import "bootstrap/responsive.less";
+@import "variables.less";
+@import "bootswatch.less";
+//@import "Var.less";
+@import "colorbox.css";
+
+/* ===== Primary Styles ========================================================
+   Author:
+
+vintage bright: http://www.colorschemer.com/schemes/viewscheme.php?id=9728
+
+<span class="swatch_3d_32" title="#CDCDAA" style="background-color:#CDCDAA;"></span>
+<span class="swatch_3d_32" title="#009DB0" style="background-color:#009DB0;"></span>
+<span class="swatch_3d_32" title="#8EA916" style="background-color:#8EA916;"></span>
+<span class="swatch_3d_32" title="#FC5952" style="background-color:#FC5952;"></span>
+<span class="swatch_3d_32" title="#575757" style="background-color:#575757;"></span>
+
+#FFFF11  instead of blue?#559DFF
+========================================================================== */
+
+.music { color: #FFFF11;
+}
+
+.film { color: #8EA916; 
+}
+
+.comedy { color:#FC5952;
+ }
+
+.star_sep a:after {
+    color: #B3EFFF;
+    content: " ★";
+    font-style: normal;
+}
+
+.large_text {
+    color: #FFFFFF;
+    font-size: 135%;
+}
+
+.modal_avatar {
+    border-radius: 6px 6px 6px 6px;
+    min-height: 64px;
+    max-width: 64px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.size128 {
+    border-radius: 6px 6px 6px 6px;
+    min-height: 128px;
+    max-width: 128px;
+}
+
+.friend_avatar {
+    border-radius: 6px 6px 6px 6px;
+    max-width: 50px;
+    margin: 10px;
+}
+
+.schedule {
+    position:relative;
+    top: 10px;
+}
+
+.act_time_row {
+    position: absolute;
+    border-top: dotted;
+    width: 975px;
+    border-width: 1px;  
+}
+
+.venue_row {
+    position:absolute;
+}
+
+.act_at_venue {
+    width: 150px;
+    position:absolute;
+    background-color: darken(@blueDark, 10%);
+    text-shadow: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    display: table;
+    color: @grayLighter;
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.guide_act_at_venue {
+    position: relative;
+    height: 50px;
+    width: 150px;
+    display: inline-block;  
+    background-color: darken(@blueDark, 10%);
+    text-shadow: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    color: @grayLighter;
+    opacity: 0.85;
+}
+
+.act_title {
+    color: #FFF;
+    background-color: #000;
+}
+
+.act_link {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.act_link_guide {
+    color: #FFFFFF;
+}
+
+.act_facebook_friends {
+  float: right;
+}
+
+.act_time {
+    position:absolute;
+    bottom:0px;
+    left:70px;
+}
+
+.recommended_act {
+    border-right: solid;
+    border-width: 8px;
+    border-color: lighten(@purple, 10%);
+}
+
+.similar_act {
+    border-right: solid;
+    border-width: 8px;
+    border-color: lighten(@yellow, 10%);    
+}
+
+.selected_act {
+    //.buttonBackground(lighten(@green, 10%), @green);
+    background-color: lighten(@green, 10%);    
+}
+
+.act_at_venue p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;  
+}
+
+.alert-heading {
+    padding-bottom: 10px;
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+
+
+.tweet,
+.query {
+  font: 120% @baseFontFamily;
+  color: @white;
+}
+
+.tweet_list {
+//  -webkit-border-radius: 0.5em;
+//  -moz-border-radius: 0.5em;
+//  border-radius: 0.5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  //background-color: darken(@blueDark, 10%);
+}
+
+.tweet_list li {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0.5em;
+  list-style-type: none;
+}
+
+.tweet_list li a {
+  color: @gray;
+}
+
+.tweet_list .tweet_even {
+  //background-color: @blueDark;
+}
+
+.tweet_list .tweet_avatar {
+  padding-right: .5em; float: left;
+}
+
+.tweet_list .tweet_avatar img {
+  vertical-align: middle;
+}
+
+
+/*----------------------------------------------------------------------------------------------*\
+                                                                                Print styles
+                                                                                
+        Inlined to avoid required HTTP connection - link: http://www.phpied.com/delay-loading-your-print-css/ 
+\*----------------------------------------------------------------------------------------------*/
+@media print {
+    body {
+        font-family: Georgia, serif;
+        background: none;
+        color: black;
+        margin: 0; padding: 0;
+    }
+    .container, .well {
+        width: 100%;
+        margin: 0; padding: 0;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    * { background: transparent !important; color: #444 !important; }
+    a, a:visited { color: #444 !important; text-decoration: underline; }
+     pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+     thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+     tr, img { page-break-inside: avoid; }
+     @page { 
+        margin-left: 0.1cm;
+        margin-right: 0.1cm;
+        margin-top: 0.1cm;
+        margin-bottom: 0.1cm;
+     }
+     p, h2, h3 { orphans: 3; widows: 3; }
+     h2, h3{ page-break-after: avoid; }
+    .navbar, #guide, .hide_print {
+      display: none;
+    }
+    
+    .act_at_venue {
+        background: none;
+        border: dashed 1px black;
+        box-shadow: none;
+    }
+    
+    .selected_act {
+        border: 2px solid black;
+        font-weight: bold;        
+    }
+    
+    .recommended_act {
+      border-right: 5px solid black;
+    }
+}
+

@@ -1,0 +1,289 @@
+# Estonian translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-04-04 17:44+1000\n"
+"PO-Revision-Date: 2012-04-01 20:22+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: et <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: templates/act.html:9
+#, fuzzy, python-format
+msgid ""
+"festival appearances for %s in 2012. Reviews, info and recommendations."
+msgstr "Festivali ilmeid %s aastal 2012. Ülevaated, teave ja soovitused."
+
+#: templates/act.html:10
+#, python-format
+msgid "%s | Festival Tour Dates 2012"
+msgstr "%s | Festivali Tour kuupäevad 2012"
+
+#: templates/act.html:14 templates/festival.html:17
+msgid "Flag incorrect information"
+msgstr "Lipu ebaõige info"
+
+#: templates/act.html:34 templates/act.html:37
+msgid "unknown"
+msgstr "Teadmata"
+
+#: templates/act.html:43
+msgid "Back"
+msgstr "Tagasi"
+
+#: templates/act.html:93
+#, python-format
+msgid "%s is on at:"
+msgstr "%s on kohta:"
+
+#: templates/act.html:166
+msgid "What people on twitter think"
+msgstr "Milliseid inimesi puperdama arvan"
+
+#: templates/base.html:60 templates/list_countries.html:5
+msgid "List By Country"
+msgstr "Loend riikide kaupa"
+
+#: templates/base.html:65
+msgid "Search"
+msgstr "Otsing"
+
+#: templates/base.html:69
+msgid "Feedback"
+msgstr "Tagasiside"
+
+#: templates/base.html:72
+msgid "Language"
+msgstr "Keel"
+
+#: templates/base.html:83
+msgid "Other"
+msgstr "Muud"
+
+#: templates/choose_language.html:2 templates/index.html:2
+#: templates/list_countries.html:2
+#: templates/list_festivals_from_country.html:2
+#: templates/search_festivals.html:2
+msgid ""
+"Music Film Comedy helps you decide what to see at a festival with great "
+"recommendations and info."
+msgstr ""
+"Muusika kile komöödia aitab teil otsustada, mida kuvamiseks suurt soovitusi "
+"ja infot Festival."
+
+#: templates/choose_language.html:3
+#, fuzzy
+msgid "Choose Language | The Best Act/Film Recommendations"
+msgstr "Otsi festivalid | Parim seaduse ja filmi soovitused"
+
+#: templates/choose_language.html:5
+msgid "Choose Language"
+msgstr "Vali keel"
+
+#: templates/festival.html:10 templates/recommend_acts.html:2
+#: templates/recommended_acts.html:2
+#, python-format
+msgid ""
+"Plan and get recommendations for what to see at %s. See reviews, lineup and "
+"act info."
+msgstr ""
+"Tegevuskava ja saada soovitusi milline kuvamiseks kell %s. Vt ülevaate, "
+"koosseis ja seaduse info."
+
+#: templates/festival.html:11
+#, python-format
+msgid "%s | recommendations, reviews, line up and dates"
+msgstr "%s | soovitused, Arvustused, rida üles ja kuupäevad"
+
+#: templates/festival.html:42
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s."
+msgstr "Meil ei ole veel täpsed kuupäevad, kuid see on tavaliselt %s."
+
+#: templates/festival.html:44
+#, python-format
+msgid "We don't have dates for %s yet."
+msgstr "Meil ei ole veel %s kuupäevad."
+
+#: templates/festival.html:51
+msgid "Recommend Acts"
+msgstr "Soovitame õigusakte"
+
+#: templates/festival.html:56
+msgid "Recommend For Today"
+msgstr "Täna soovitada"
+
+#: templates/festival.html:59
+#, python-format
+msgid "We don't have a lineup for %s yet."
+msgstr "Meil pole veel jadastamine %s jaoks."
+
+#: templates/festival.html:72
+msgid "Lineup:"
+msgstr "Lineup:"
+
+#: templates/index.html:3
+msgid "MusicFilmComedy - Festivals and The Best Act/Film Recommendations"
+msgstr "MusicFilmComedy - festivalid ja parim seaduse ja filmi soovitused"
+
+#: templates/index.html:6
+msgid "Featured Festival"
+msgstr "Esiletõstetud Festival"
+
+#: templates/index.html:9
+msgid "MusicFilmComedy allows you to find and plan what to see at a festival."
+msgstr "MusicFilmComedy võimaldab teil leida ja mida on festivalil näha kava."
+
+#: templates/index.html:12
+msgid "e.g. summerfest, france, blues"
+msgstr "näiteks summerfest, Prantsusmaa, sinised"
+
+#: templates/index.html:13
+msgid "Search Festivals"
+msgstr "Otsingu festivalid"
+
+#: templates/index.html:16
+msgid ""
+"Please give us feedback if you find issues! We are still testing and would "
+"love any ideas or suggestions."
+msgstr ""
+"Palun andke meile tagasisidet probleeme leidmisel! Me ikka katsetamise ja "
+"armastan mingeid ideid vυi soovitusi."
+
+#: templates/index.html:22
+msgid "Upcoming Nearby Festivals"
+msgstr "Tulemas läheduses festivalid"
+
+#: templates/index.html:26
+msgid "Other Featured Festivals"
+msgstr "Muud leiduvatesse festivalide"
+
+#: templates/index.html:38
+msgid "Upcoming Festivals"
+msgstr "Tulemas festivalid"
+
+#: templates/index.html:46
+msgid "Popular Acts"
+msgstr "Levinud toimingud"
+
+#: templates/list_countries.html:3
+#: templates/list_festivals_from_country.html:3
+#, fuzzy
+msgid "List Festivals By Country | The Best Act/Film Recommendations"
+msgstr "Otsi festivalid | Parim seaduse ja filmi soovitused"
+
+#: templates/list_festivals_from_country.html:19
+#: templates/search_festivals.html:30
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s"
+msgstr "Meil ei ole veel täpsed kuupäevad, kuid see on tavaliselt %s"
+
+#: templates/list_festivals_from_country.html:28
+#: templates/recommended_acts.html:23 templates/search_festivals.html:39
+msgid "View details"
+msgstr "Kuva üksikasjad"
+
+#: templates/recommend_acts.html:3
+#, python-format
+msgid "%s | Enter your preferences or get magical recommendations"
+msgstr "%s | Sisestage oma eelistused või saada maagiline soovitused"
+
+#: templates/recommend_acts.html:7
+#, python-format
+msgid "Magical Recommendations for %s. "
+msgstr "Maagiline soovitused %s. "
+
+#: templates/recommend_acts.html:9
+#, python-format
+msgid ""
+"Click the big button to get our recommendations for %s. Our recommendations "
+"are based on a magic mixture of popularity (facebook/twitter/web) and "
+"reviews."
+msgstr ""
+"Suur nuppu saada meie soovitused %s. Meie soovitused põhinevad magic segu "
+"populaarsus (facebook/vidistama/web) ja Arvustused."
+
+#: templates/recommend_acts.html:10
+msgid "Magical"
+msgstr "Maagiline"
+
+#: templates/recommend_acts.html:11
+msgid "or"
+msgstr "või"
+
+#: templates/recommend_acts.html:12
+msgid "choose your preferences."
+msgstr "Valige oma eelistused."
+
+#: templates/recommend_acts.html:19
+msgid "Preferences"
+msgstr "Eelistused"
+
+#: templates/recommend_acts.html:22
+msgid "Genres you are interested in:"
+msgstr "® Anrid olete huvitatud:"
+
+#: templates/recommend_acts.html:36
+msgid "Days:"
+msgstr "Päeva:"
+
+#: templates/recommend_acts.html:48
+msgid "We don't have enough data about this festival to provide preferences."
+msgstr "Meil ei ole piisavalt andmeid selle festivali näha soodustuste kohta."
+
+#: templates/recommend_acts.html:53
+msgid "Magically with your preferences"
+msgstr "Magically koos teie eelistused"
+
+#: templates/recommended_acts.html:3
+#, python-format
+msgid "%s | Recommendations"
+msgstr "%s | Soovitused"
+
+#: templates/recommended_acts.html:6
+#, python-format
+msgid "Recommended Acts for %s."
+msgstr "Soovitatavad toimingud %s."
+
+#: templates/recommended_acts.html:8
+msgid ""
+"Click on the acts to get the times, we're making this nicer at the moment "
+"and will have something better up soon."
+msgstr ""
+"Klõpsake kohta, siis korda saada, me üritame teha see nicer hetkel ja on "
+"midagi paremat üles kiiresti."
+
+#: templates/search_festivals.html:3
+msgid "Search Festivals | The Best Act/Film Recommendations"
+msgstr "Otsi festivalid | Parim seaduse ja filmi soovitused"
+
+#: templates/search_festivals.html:7
+msgid "Search Results"
+msgstr "Otsingu tulemused"
+
+#: templates/search_festivals.html:13
+msgid ""
+"No festivals found. We are trying to add more festivals all the time. If you"
+" have details for a festival that you think we should have please contact us"
+msgstr ""
+"Festivalid ei leitud. Me püüame lisada mitme festivalid kogu aeg. Kui teil "
+"on andmed festivalile, mis te arvate, et me peaks on Palun võtke meiega "
+"ühendust"
+
+#: templates/search_festivals.html:49
+msgid "Previous"
+msgstr "Eelmine"
+
+#: templates/search_festivals.html:54
+msgid "Next"
+msgstr "Järgmise"

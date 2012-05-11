@@ -1,0 +1,21 @@
+<%!        
+import datetime
+
+%>
+<% 
+name_in_locale = act.get('name_in_locale') or act['name']
+%>
+<%def name="description()">${_('festival appearances for %s in 2012. Reviews, info and recommendations.') % (act.get('name_in_locale') or act['name']) }</%def>
+<%def name="title()">${_('%s | Festival Tour Dates 2012') % (act.get('name_in_locale') or act['name'])}</%def>
+<%
+if act['twitter_pic'] or act['facebook_pic']:
+    avatar = act['facebook_pic'] or act['twitter_pic']
+else:
+    avatar = '/img/no-avatar.png'
+%>
+
+<p>
+    <img class="modal_avatar" alt="${act['name']}" src="${avatar}">
+    ${act['description'] or act['about'] or act['twitter_description'] or ''}
+</p>
+<a class="btn" href="/act/${act['name'].replace(' ', '_')}">${_('More Details')}</a>

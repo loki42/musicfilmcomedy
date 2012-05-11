@@ -1,0 +1,56 @@
+<%inherit file="base.html"/>
+<%def name="description()">${_('Plan and get recommendations for what to see at %s. See reviews, lineup and act info.') % festival}</%def>
+<%def name="title()">${_("%s | Enter your preferences or get magical recommendations") % festival}</%def>
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="hero-unit">
+    <h2>
+        ${_('Magical Recommendations for %s. ') % festival}
+  </h2>
+  <p>${_('Click the big button to get our recommendations for %s. Our recommendations are based on a magic mixture of popularity (facebook/twitter/web) and reviews.') % festival}  
+  <p><a href="/${lang}/recommended_acts/${festival.replace(' ', '_')}" class="btn btn-primary btn-large">${_('Magical')} &raquo;</a></p>
+  <p>${_('or')}</p>
+  <p>${_('choose your preferences.')}</p>
+</div>
+## select days
+## nothing before time 
+## allowed genres
+<form action="/${lang}/recommended_acts/${festival.replace(' ', '_')}" class="form-horizontal">
+    <fieldset>
+        <legend>${_('Preferences')}</legend>
+    % if genres:
+    <div class="control-group">
+        <label for="optionsCheckboxList" class="control-label">${_('Genres you are interested in:')}</label>
+        <div class="controls">
+            % for i, genre in enumerate(genres):
+            <label class="checkbox inline">
+                <input type="checkbox" value="${genre}" name="genres">
+                ${genre}
+            </label>
+            % endfor
+            ##<p class="help-block"><strong>Note:</strong> All or none does the same thing.</p>
+        </div>
+    </div>
+    % endif
+    % if days:
+    <div class="control-group">
+        <label for="optionsCheckboxList" class="control-label">${_('Days:')}</label>
+        <div class="controls">
+            % for i, day in enumerate(days):
+            <label class="checkbox inline">
+                <input type="checkbox" value="${day.isoformat()}" name="days">
+                ${day.strftime('%a %d')}
+            </label>
+            % endfor
+        </div>
+    </div>
+    % endif
+    % if not days and not genres:
+    <p>${_("We don't have enough data about this festival to provide preferences.")} </p>
+    % endif
+
+## lock in some Acts
+## max to spend
+<button type="submit" class="btn btn-primary btn-large">${_('Magically with your preferences')}</button>
+    </fieldset>
+</form>
+

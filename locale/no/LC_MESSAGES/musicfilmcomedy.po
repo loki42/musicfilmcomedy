@@ -1,0 +1,292 @@
+# Norwegian translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-04-04 17:44+1000\n"
+"PO-Revision-Date: 2012-04-01 20:10+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: no <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: templates/act.html:9
+#, fuzzy, python-format
+msgid ""
+"festival appearances for %s in 2012. Reviews, info and recommendations."
+msgstr ""
+"Festivalen skinn for %s i 2012. Vurderinger, informasjon og anbefalinger."
+
+#: templates/act.html:10
+#, python-format
+msgid "%s | Festival Tour Dates 2012"
+msgstr "%s | Festivalen Tour datoer 2012"
+
+#: templates/act.html:14 templates/festival.html:17
+msgid "Flag incorrect information"
+msgstr "Feil informasjon i flagg"
+
+#: templates/act.html:34 templates/act.html:37
+msgid "unknown"
+msgstr "Ukjent"
+
+#: templates/act.html:43
+msgid "Back"
+msgstr "Baksiden"
+
+#: templates/act.html:93
+#, python-format
+msgid "%s is on at:"
+msgstr "%s er på på:"
+
+#: templates/act.html:166
+msgid "What people on twitter think"
+msgstr "Hva folk på twitter tror"
+
+#: templates/base.html:60 templates/list_countries.html:5
+msgid "List By Country"
+msgstr "Listen etter land"
+
+#: templates/base.html:65
+msgid "Search"
+msgstr "Søk"
+
+#: templates/base.html:69
+msgid "Feedback"
+msgstr "Tilbakemelding"
+
+#: templates/base.html:72
+msgid "Language"
+msgstr "Språk"
+
+#: templates/base.html:83
+msgid "Other"
+msgstr "Andre"
+
+#: templates/choose_language.html:2 templates/index.html:2
+#: templates/list_countries.html:2
+#: templates/list_festivals_from_country.html:2
+#: templates/search_festivals.html:2
+msgid ""
+"Music Film Comedy helps you decide what to see at a festival with great "
+"recommendations and info."
+msgstr ""
+"Musikk Film komedie hjelper deg med å bestemme hva du skal se på en festival"
+" med gode anbefalinger og info."
+
+#: templates/choose_language.html:3
+#, fuzzy
+msgid "Choose Language | The Best Act/Film Recommendations"
+msgstr "Søke festivaler | De beste Act/Film anbefalingene"
+
+#: templates/choose_language.html:5
+msgid "Choose Language"
+msgstr "Velg språk"
+
+#: templates/festival.html:10 templates/recommend_acts.html:2
+#: templates/recommended_acts.html:2
+#, python-format
+msgid ""
+"Plan and get recommendations for what to see at %s. See reviews, lineup and "
+"act info."
+msgstr ""
+"Planlegge og få anbefalinger om hva du skal se på %s. Se anmeldelser, utvalg"
+" og act info."
+
+#: templates/festival.html:11
+#, python-format
+msgid "%s | recommendations, reviews, line up and dates"
+msgstr "%s | anbefalinger, vurderinger, linje opp og datoer"
+
+#: templates/festival.html:42
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s."
+msgstr "Vi har ikke den eksakte datoene ennå, men det er vanligvis i %s."
+
+#: templates/festival.html:44
+#, python-format
+msgid "We don't have dates for %s yet."
+msgstr "Vi har ikke datoer for %s ennå."
+
+#: templates/festival.html:51
+msgid "Recommend Acts"
+msgstr "Anbefale handlinger"
+
+#: templates/festival.html:56
+msgid "Recommend For Today"
+msgstr "Anbefale For i dag"
+
+#: templates/festival.html:59
+#, python-format
+msgid "We don't have a lineup for %s yet."
+msgstr "Vi har et utvalg for %s ennå."
+
+#: templates/festival.html:72
+msgid "Lineup:"
+msgstr "Utvalg:"
+
+#: templates/index.html:3
+msgid "MusicFilmComedy - Festivals and The Best Act/Film Recommendations"
+msgstr "MusicFilmComedy - festivaler og beste Act/Film anbefalinger"
+
+#: templates/index.html:6
+msgid "Featured Festival"
+msgstr "Anbefalte Festival"
+
+#: templates/index.html:9
+msgid "MusicFilmComedy allows you to find and plan what to see at a festival."
+msgstr ""
+"MusicFilmComedy kan du finne og planlegge hva du skal se på en festival."
+
+#: templates/index.html:12
+msgid "e.g. summerfest, france, blues"
+msgstr "f.eks summerfest, Frankrike, blues"
+
+#: templates/index.html:13
+msgid "Search Festivals"
+msgstr "Søk festivaler"
+
+#: templates/index.html:16
+msgid ""
+"Please give us feedback if you find issues! We are still testing and would "
+"love any ideas or suggestions."
+msgstr ""
+"Vennligst gi oss tilbakemelding hvis du finner problemer! Vi er fortsatt "
+"testing og ville elske noen ideer eller forslag."
+
+#: templates/index.html:22
+msgid "Upcoming Nearby Festivals"
+msgstr "Kommende i nærheten festivaler"
+
+#: templates/index.html:26
+msgid "Other Featured Festivals"
+msgstr "Andre kjennetegnet festivaler"
+
+#: templates/index.html:38
+msgid "Upcoming Festivals"
+msgstr "Kommende festivaler"
+
+#: templates/index.html:46
+msgid "Popular Acts"
+msgstr "Populære handlinger"
+
+#: templates/list_countries.html:3
+#: templates/list_festivals_from_country.html:3
+#, fuzzy
+msgid "List Festivals By Country | The Best Act/Film Recommendations"
+msgstr "Søke festivaler | De beste Act/Film anbefalingene"
+
+#: templates/list_festivals_from_country.html:19
+#: templates/search_festivals.html:30
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s"
+msgstr "Vi har ikke den eksakte datoene ennå, men det er vanligvis i %s"
+
+#: templates/list_festivals_from_country.html:28
+#: templates/recommended_acts.html:23 templates/search_festivals.html:39
+msgid "View details"
+msgstr "Visningsdetaljer"
+
+#: templates/recommend_acts.html:3
+#, python-format
+msgid "%s | Enter your preferences or get magical recommendations"
+msgstr "%s | Angi dine preferanser, eller få magisk anbefalinger"
+
+#: templates/recommend_acts.html:7
+#, python-format
+msgid "Magical Recommendations for %s. "
+msgstr "Magisk anbefalinger for %s. "
+
+#: templates/recommend_acts.html:9
+#, python-format
+msgid ""
+"Click the big button to get our recommendations for %s. Our recommendations "
+"are based on a magic mixture of popularity (facebook/twitter/web) and "
+"reviews."
+msgstr ""
+"Klikk den store knappen for å få våre anbefalinger for %s. Våre anbefalinger"
+" som er basert på en magisk blanding av popularitet (facebook/kvitter/web) "
+"og vurderinger."
+
+#: templates/recommend_acts.html:10
+msgid "Magical"
+msgstr "Magisk"
+
+#: templates/recommend_acts.html:11
+msgid "or"
+msgstr "eller"
+
+#: templates/recommend_acts.html:12
+msgid "choose your preferences."
+msgstr "registrere dine preferanser."
+
+#: templates/recommend_acts.html:19
+msgid "Preferences"
+msgstr "Innstillinger"
+
+#: templates/recommend_acts.html:22
+msgid "Genres you are interested in:"
+msgstr "Sjangere du er interessert i:"
+
+#: templates/recommend_acts.html:36
+msgid "Days:"
+msgstr "Dager:"
+
+#: templates/recommend_acts.html:48
+msgid "We don't have enough data about this festival to provide preferences."
+msgstr "Vi har ikke nok data om denne festivalen å gi preferanser."
+
+#: templates/recommend_acts.html:53
+msgid "Magically with your preferences"
+msgstr "Magisk med dine preferanser"
+
+#: templates/recommended_acts.html:3
+#, python-format
+msgid "%s | Recommendations"
+msgstr "%s | Anbefalinger"
+
+#: templates/recommended_acts.html:6
+#, python-format
+msgid "Recommended Acts for %s."
+msgstr "Anbefalte handlinger for %s."
+
+#: templates/recommended_acts.html:8
+msgid ""
+"Click on the acts to get the times, we're making this nicer at the moment "
+"and will have something better up soon."
+msgstr ""
+"Klikk på handlinger for å få gangene, vi gjør dette hyggeligere i "
+"øyeblikket, og vil ha noe bedre opp snart."
+
+#: templates/search_festivals.html:3
+msgid "Search Festivals | The Best Act/Film Recommendations"
+msgstr "Søke festivaler | De beste Act/Film anbefalingene"
+
+#: templates/search_festivals.html:7
+msgid "Search Results"
+msgstr "SØKERESULTATER"
+
+#: templates/search_festivals.html:13
+msgid ""
+"No festivals found. We are trying to add more festivals all the time. If you"
+" have details for a festival that you think we should have please contact us"
+msgstr ""
+"Ingen festivaler som er funnet. Vi prøver å legge til mer festivaler hele "
+"tiden. Hvis du har detaljene for en festival som du tror bør vi ha kontakt "
+"oss"
+
+#: templates/search_festivals.html:49
+msgid "Previous"
+msgstr "Forrige"
+
+#: templates/search_festivals.html:54
+msgid "Next"
+msgstr "Neste"

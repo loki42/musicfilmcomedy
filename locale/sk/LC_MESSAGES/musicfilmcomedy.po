@@ -1,0 +1,291 @@
+# Slovak translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-04-04 17:44+1000\n"
+"PO-Revision-Date: 2012-04-01 20:11+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: sk <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: templates/act.html:9
+#, fuzzy, python-format
+msgid ""
+"festival appearances for %s in 2012. Reviews, info and recommendations."
+msgstr ""
+"Festival vystúpenie pre %s v roku 2012. Recenzie, informácie a odporúčania."
+
+#: templates/act.html:10
+#, python-format
+msgid "%s | Festival Tour Dates 2012"
+msgstr "%s | Festivalu turné termíny 2012"
+
+#: templates/act.html:14 templates/festival.html:17
+msgid "Flag incorrect information"
+msgstr "Vlajka nesprávne informácie"
+
+#: templates/act.html:34 templates/act.html:37
+msgid "unknown"
+msgstr "neznáme"
+
+#: templates/act.html:43
+msgid "Back"
+msgstr "Späť"
+
+#: templates/act.html:93
+#, python-format
+msgid "%s is on at:"
+msgstr "%s je na na:"
+
+#: templates/act.html:166
+msgid "What people on twitter think"
+msgstr "Myslím, že to, čo ľudia na stebėtų"
+
+#: templates/base.html:60 templates/list_countries.html:5
+msgid "List By Country"
+msgstr "Zoznam krajín"
+
+#: templates/base.html:65
+msgid "Search"
+msgstr "Vyhľadávanie"
+
+#: templates/base.html:69
+msgid "Feedback"
+msgstr "Spätná väzba"
+
+#: templates/base.html:72
+msgid "Language"
+msgstr "Jazyk"
+
+#: templates/base.html:83
+msgid "Other"
+msgstr "Ostatné"
+
+#: templates/choose_language.html:2 templates/index.html:2
+#: templates/list_countries.html:2
+#: templates/list_festivals_from_country.html:2
+#: templates/search_festivals.html:2
+msgid ""
+"Music Film Comedy helps you decide what to see at a festival with great "
+"recommendations and info."
+msgstr ""
+"Hudobné Film komédia umožňuje rozhodnúť, čo vidieť festivale s skvelá "
+"odporúčania a info."
+
+#: templates/choose_language.html:3
+#, fuzzy
+msgid "Choose Language | The Best Act/Film Recommendations"
+msgstr "Vyhľadávanie festivaly | Najlepšie aktu a Film odporúčania"
+
+#: templates/choose_language.html:5
+msgid "Choose Language"
+msgstr "Vyberte jazyk"
+
+#: templates/festival.html:10 templates/recommend_acts.html:2
+#: templates/recommended_acts.html:2
+#, python-format
+msgid ""
+"Plan and get recommendations for what to see at %s. See reviews, lineup and "
+"act info."
+msgstr ""
+"Plán a získať odporúčania pre to, čo nájdete na %s. Pozri recenze, zostava a"
+" zákona info."
+
+#: templates/festival.html:11
+#, python-format
+msgid "%s | recommendations, reviews, line up and dates"
+msgstr "%s | odporúčania, Recenzie, riadok hore a dátumy"
+
+#: templates/festival.html:42
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s."
+msgstr "Nemáme ešte presné termíny, ale je to zvyčajne v %s."
+
+#: templates/festival.html:44
+#, python-format
+msgid "We don't have dates for %s yet."
+msgstr "Nemáme dátumy pre %s ešte."
+
+#: templates/festival.html:51
+msgid "Recommend Acts"
+msgstr "Odporučiť aktov"
+
+#: templates/festival.html:56
+msgid "Recommend For Today"
+msgstr "Odporúčame pre dnešok"
+
+#: templates/festival.html:59
+#, python-format
+msgid "We don't have a lineup for %s yet."
+msgstr "Nemáme tíme pre %s ešte."
+
+#: templates/festival.html:72
+msgid "Lineup:"
+msgstr "Zostava:"
+
+#: templates/index.html:3
+msgid "MusicFilmComedy - Festivals and The Best Act/Film Recommendations"
+msgstr "MusicFilmComedy - festivaly a najlepšie aktu a Film odporúčania"
+
+#: templates/index.html:6
+msgid "Featured Festival"
+msgstr "Najlepšie Festival"
+
+#: templates/index.html:9
+msgid "MusicFilmComedy allows you to find and plan what to see at a festival."
+msgstr "MusicFilmComedy umožňuje nájsť a čo si pozrieť na festivale v pláne."
+
+#: templates/index.html:12
+msgid "e.g. summerfest, france, blues"
+msgstr "napr summerfest, Francúzsko, blues"
+
+#: templates/index.html:13
+msgid "Search Festivals"
+msgstr "Vyhľadávanie festivaly"
+
+#: templates/index.html:16
+msgid ""
+"Please give us feedback if you find issues! We are still testing and would "
+"love any ideas or suggestions."
+msgstr ""
+"Prosím, daj nám spätnú väzbu Ak zistíte problémy! Sme stále testovanie a rád"
+" bych nejaké nápady alebo návrhy."
+
+#: templates/index.html:22
+msgid "Upcoming Nearby Festivals"
+msgstr "Nadchádzajúce blízkosti festivaly"
+
+#: templates/index.html:26
+msgid "Other Featured Festivals"
+msgstr "Ostatné najlepšie festivaly"
+
+#: templates/index.html:38
+msgid "Upcoming Festivals"
+msgstr "Pripravované festivaly"
+
+#: templates/index.html:46
+msgid "Popular Acts"
+msgstr "Populárna aktov"
+
+#: templates/list_countries.html:3
+#: templates/list_festivals_from_country.html:3
+#, fuzzy
+msgid "List Festivals By Country | The Best Act/Film Recommendations"
+msgstr "Vyhľadávanie festivaly | Najlepšie aktu a Film odporúčania"
+
+#: templates/list_festivals_from_country.html:19
+#: templates/search_festivals.html:30
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s"
+msgstr "Nemáme ešte presné termíny, ale je to zvyčajne v %s"
+
+#: templates/list_festivals_from_country.html:28
+#: templates/recommended_acts.html:23 templates/search_festivals.html:39
+msgid "View details"
+msgstr "Zobraziť podrobnosti"
+
+#: templates/recommend_acts.html:3
+#, python-format
+msgid "%s | Enter your preferences or get magical recommendations"
+msgstr "%s | Zadajte vaše preferencie alebo získať magické odporúčania"
+
+#: templates/recommend_acts.html:7
+#, python-format
+msgid "Magical Recommendations for %s. "
+msgstr "Magické odporúčania pre %s. "
+
+#: templates/recommend_acts.html:9
+#, python-format
+msgid ""
+"Click the big button to get our recommendations for %s. Our recommendations "
+"are based on a magic mixture of popularity (facebook/twitter/web) and "
+"reviews."
+msgstr ""
+"Kliknutím na veľké tlačidlo získať našom odporúčania pre %s. Naše "
+"odporúčania sú založené na magické zmes popularity "
+"(facebook/neštebotajú/web) a Recenzie."
+
+#: templates/recommend_acts.html:10
+msgid "Magical"
+msgstr "Magické"
+
+#: templates/recommend_acts.html:11
+msgid "or"
+msgstr "alebo"
+
+#: templates/recommend_acts.html:12
+msgid "choose your preferences."
+msgstr "Vyberte predvoľby."
+
+#: templates/recommend_acts.html:19
+msgid "Preferences"
+msgstr "Predvoľby"
+
+#: templates/recommend_acts.html:22
+msgid "Genres you are interested in:"
+msgstr "Žánre, ktoré vás zaujímajú:"
+
+#: templates/recommend_acts.html:36
+msgid "Days:"
+msgstr "Dni:"
+
+#: templates/recommend_acts.html:48
+msgid "We don't have enough data about this festival to provide preferences."
+msgstr "Nemáme dostatok údajov o tohto festivalu poskytnúť preferencie."
+
+#: templates/recommend_acts.html:53
+msgid "Magically with your preferences"
+msgstr "Magicky s vašim preferenciám"
+
+#: templates/recommended_acts.html:3
+#, python-format
+msgid "%s | Recommendations"
+msgstr "%s | Odporúčania"
+
+#: templates/recommended_acts.html:6
+#, python-format
+msgid "Recommended Acts for %s."
+msgstr "Akty odporúčané pre %s."
+
+#: templates/recommended_acts.html:8
+msgid ""
+"Click on the acts to get the times, we're making this nicer at the moment "
+"and will have something better up soon."
+msgstr ""
+"Kliknite na akty získať doby sme ste tvorby to krajší okamihom a niečo "
+"lepšie, až budú mať čoskoro."
+
+#: templates/search_festivals.html:3
+msgid "Search Festivals | The Best Act/Film Recommendations"
+msgstr "Vyhľadávanie festivaly | Najlepšie aktu a Film odporúčania"
+
+#: templates/search_festivals.html:7
+msgid "Search Results"
+msgstr "Výsledky vyhľadávania"
+
+#: templates/search_festivals.html:13
+msgid ""
+"No festivals found. We are trying to add more festivals all the time. If you"
+" have details for a festival that you think we should have please contact us"
+msgstr ""
+"Žiadne slávnosti našiel. Snažíme sa pridať ďalšie festivaly všetkých dôb. Ak"
+" máte podrobnosti o festival, ktorý si myslíte, že sme mali mať kontaktujte "
+"nás"
+
+#: templates/search_festivals.html:49
+msgid "Previous"
+msgstr "Predchádzajúce"
+
+#: templates/search_festivals.html:54
+msgid "Next"
+msgstr "Ďalší"

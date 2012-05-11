@@ -1,0 +1,292 @@
+# Ukrainian translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-04-04 17:44+1000\n"
+"PO-Revision-Date: 2012-04-01 20:13+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: uk <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: templates/act.html:9
+#, fuzzy, python-format
+msgid ""
+"festival appearances for %s in 2012. Reviews, info and recommendations."
+msgstr ""
+"Виступів фестивалю для %s у 2012 році. Відгуки, інформація та рекомендації."
+
+#: templates/act.html:10
+#, python-format
+msgid "%s | Festival Tour Dates 2012"
+msgstr "%s | Фестиваль Тур дати 2012"
+
+#: templates/act.html:14 templates/festival.html:17
+msgid "Flag incorrect information"
+msgstr "Прапор неправильну інформацію."
+
+#: templates/act.html:34 templates/act.html:37
+msgid "unknown"
+msgstr "Невідомий"
+
+#: templates/act.html:43
+msgid "Back"
+msgstr "Назад"
+
+#: templates/act.html:93
+#, python-format
+msgid "%s is on at:"
+msgstr "%s знаходиться на:"
+
+#: templates/act.html:166
+msgid "What people on twitter think"
+msgstr "Думаю, що люди на twitter"
+
+#: templates/base.html:60 templates/list_countries.html:5
+msgid "List By Country"
+msgstr "Список по країні"
+
+#: templates/base.html:65
+msgid "Search"
+msgstr "Пошук"
+
+#: templates/base.html:69
+msgid "Feedback"
+msgstr "Зворотній зв'язок"
+
+#: templates/base.html:72
+msgid "Language"
+msgstr "Мова"
+
+#: templates/base.html:83
+msgid "Other"
+msgstr "Інші"
+
+#: templates/choose_language.html:2 templates/index.html:2
+#: templates/list_countries.html:2
+#: templates/list_festivals_from_country.html:2
+#: templates/search_festivals.html:2
+msgid ""
+"Music Film Comedy helps you decide what to see at a festival with great "
+"recommendations and info."
+msgstr ""
+"Музичний фільм комедія допомагає вирішити, що подивитися на фестиваль з "
+"великим рекомендації та інформацію."
+
+#: templates/choose_language.html:3
+#, fuzzy
+msgid "Choose Language | The Best Act/Film Recommendations"
+msgstr "Пошук фестивалях | Кращі рекомендації акт/кіно"
+
+#: templates/choose_language.html:5
+msgid "Choose Language"
+msgstr "Виберіть мову"
+
+#: templates/festival.html:10 templates/recommend_acts.html:2
+#: templates/recommended_acts.html:2
+#, python-format
+msgid ""
+"Plan and get recommendations for what to see at %s. See reviews, lineup and "
+"act info."
+msgstr ""
+"План і отримати рекомендації для що подивитися на %s. Див відгуки, склад і "
+"закон інформація."
+
+#: templates/festival.html:11
+#, python-format
+msgid "%s | recommendations, reviews, line up and dates"
+msgstr "%s | лінія вгору і дати, огляди, рекомендації"
+
+#: templates/festival.html:42
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s."
+msgstr "Точні дати ще немає, але це, як правило, у %s."
+
+#: templates/festival.html:44
+#, python-format
+msgid "We don't have dates for %s yet."
+msgstr "Ми не повинні дати для %s ще."
+
+#: templates/festival.html:51
+msgid "Recommend Acts"
+msgstr "Рекомендую актів"
+
+#: templates/festival.html:56
+msgid "Recommend For Today"
+msgstr "Рекомендую на сьогодні"
+
+#: templates/festival.html:59
+#, python-format
+msgid "We don't have a lineup for %s yet."
+msgstr "Ми не ще зіставлення для %s."
+
+#: templates/festival.html:72
+msgid "Lineup:"
+msgstr "Список:"
+
+#: templates/index.html:3
+msgid "MusicFilmComedy - Festivals and The Best Act/Film Recommendations"
+msgstr "MusicFilmComedy - фестивалі і кращі рекомендації акт/кіно"
+
+#: templates/index.html:6
+msgid "Featured Festival"
+msgstr "Рекомендовані фестивалі"
+
+#: templates/index.html:9
+msgid "MusicFilmComedy allows you to find and plan what to see at a festival."
+msgstr ""
+"MusicFilmComedy дозволяє знайти і планувати, що подивитися на фестивалі."
+
+#: templates/index.html:12
+msgid "e.g. summerfest, france, blues"
+msgstr "Наприклад summerfest, Франція, блюз"
+
+#: templates/index.html:13
+msgid "Search Festivals"
+msgstr "Пошук фестивалі"
+
+#: templates/index.html:16
+msgid ""
+"Please give us feedback if you find issues! We are still testing and would "
+"love any ideas or suggestions."
+msgstr ""
+"Будь ласка, дають нам зворотний зв'язок, якщо ви знайдете питань! Ми як і "
+"раніше тестування і хотілося б будь-які ідеї або пропозиції."
+
+#: templates/index.html:22
+msgid "Upcoming Nearby Festivals"
+msgstr "Майбутні поблизу фестивалі"
+
+#: templates/index.html:26
+msgid "Other Featured Festivals"
+msgstr "Інші Рекомендовані фестивалі"
+
+#: templates/index.html:38
+msgid "Upcoming Festivals"
+msgstr "Майбутні фестивалі"
+
+#: templates/index.html:46
+msgid "Popular Acts"
+msgstr "Популярні актів"
+
+#: templates/list_countries.html:3
+#: templates/list_festivals_from_country.html:3
+#, fuzzy
+msgid "List Festivals By Country | The Best Act/Film Recommendations"
+msgstr "Пошук фестивалях | Кращі рекомендації акт/кіно"
+
+#: templates/list_festivals_from_country.html:19
+#: templates/search_festivals.html:30
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s"
+msgstr "Точні дати ще немає, але це, як правило, у %s"
+
+#: templates/list_festivals_from_country.html:28
+#: templates/recommended_acts.html:23 templates/search_festivals.html:39
+msgid "View details"
+msgstr "Перегляд відомостей"
+
+#: templates/recommend_acts.html:3
+#, python-format
+msgid "%s | Enter your preferences or get magical recommendations"
+msgstr "%s | Введіть ваші уподобання, або отримати магічні рекомендації"
+
+#: templates/recommend_acts.html:7
+#, python-format
+msgid "Magical Recommendations for %s. "
+msgstr "Магічні рекомендації для %s. "
+
+#: templates/recommend_acts.html:9
+#, python-format
+msgid ""
+"Click the big button to get our recommendations for %s. Our recommendations "
+"are based on a magic mixture of popularity (facebook/twitter/web) and "
+"reviews."
+msgstr ""
+"Натисніть кнопку великий \", щоб отримати наші рекомендації для %s. Наші "
+"рекомендації на основі магія суміші популярність (facebook/щебетати/web) та "
+"відгуки."
+
+#: templates/recommend_acts.html:10
+msgid "Magical"
+msgstr "Магічні"
+
+#: templates/recommend_acts.html:11
+msgid "or"
+msgstr "або"
+
+#: templates/recommend_acts.html:12
+msgid "choose your preferences."
+msgstr "Виберіть ваші уподобання."
+
+#: templates/recommend_acts.html:19
+msgid "Preferences"
+msgstr "Налаштування"
+
+#: templates/recommend_acts.html:22
+msgid "Genres you are interested in:"
+msgstr "Жанр, що вас цікавлять:"
+
+#: templates/recommend_acts.html:36
+msgid "Days:"
+msgstr "Дні:"
+
+#: templates/recommend_acts.html:48
+msgid "We don't have enough data about this festival to provide preferences."
+msgstr "Ми не маємо достатньо даних про цей фестиваль, забезпечити переваги."
+
+#: templates/recommend_acts.html:53
+msgid "Magically with your preferences"
+msgstr "Чарівним з ваших уподобань"
+
+#: templates/recommended_acts.html:3
+#, python-format
+msgid "%s | Recommendations"
+msgstr "%s | Рекомендації"
+
+#: templates/recommended_acts.html:6
+#, python-format
+msgid "Recommended Acts for %s."
+msgstr "Рекомендовані дії для %s."
+
+#: templates/recommended_acts.html:8
+msgid ""
+"Click on the acts to get the times, we're making this nicer at the moment "
+"and will have something better up soon."
+msgstr ""
+"Клацніть на акти отримати часи, ми робимо це краще на даний момент і буде "
+"мати щось краще вгору найближчим часом."
+
+#: templates/search_festivals.html:3
+msgid "Search Festivals | The Best Act/Film Recommendations"
+msgstr "Пошук фестивалях | Кращі рекомендації акт/кіно"
+
+#: templates/search_festivals.html:7
+msgid "Search Results"
+msgstr "Результати пошуку"
+
+#: templates/search_festivals.html:13
+msgid ""
+"No festivals found. We are trying to add more festivals all the time. If you"
+" have details for a festival that you think we should have please contact us"
+msgstr ""
+"Фестивалях не знайдено. Ми намагаємося, щоб додати більше фестивалів весь "
+"час. Якщо у вас є подробиці фестиваль, що ви думаєте, ми повинні мати "
+"зв'яжіться з нами"
+
+#: templates/search_festivals.html:49
+msgid "Previous"
+msgstr "Попередній"
+
+#: templates/search_festivals.html:54
+msgid "Next"
+msgstr "Наступний"

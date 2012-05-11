@@ -1,0 +1,17 @@
+<%inherit file="base.html"/>
+<%def name="description()">${_('Music Film Comedy helps you decide what to see at a festival with great recommendations and info.')}</%def>
+<%def name="title()">${_('List Festivals By Country | The Best Act/Film Recommendations')}</%def>
+
+<div class="page-header"><h1>${_('List By Country')}<h1></div>
+
+<div class="row">
+    <div class="span12">
+        <ul class="unstyled">
+        % for country in countries:
+	        <li>
+                <h2><a href="by_country/${country.replace(' ', '_')}"><h2>${country}</a></h2>
+	        </li>
+        % endfor
+        </ul>
+    </div>
+</div>

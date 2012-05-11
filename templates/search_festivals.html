@@ -1,0 +1,61 @@
+<%inherit file="base.html"/>
+<%def name="description()">${_('Music Film Comedy helps you decide what to see at a festival with great recommendations and info.')}</%def>
+<%def name="title()">${_('Search Festivals | The Best Act/Film Recommendations')}</%def>
+
+## list festivals, with description and links, number of friends, popularity.
+
+<div class="page-header"><h1>${_('Search Results')}<h1></div>
+
+% if not festivals:
+<div class="row">
+    <div class="span12">
+        <div class="alert alert-block">
+            ${_('No festivals found. We are trying to add more festivals all the time. If you have details for a festival that you think we should have please contact us')} <a href="mailto:feedback@musicfilmcomedy.com">feedback@musicfilmcomedy.com</a>
+
+        </div>
+    </div>
+</div>
+% endif
+
+<ul class="unstyled">
+% for index, festival in enumerate(festivals):
+	<li>
+    <h2><a href="/${lang}/festival/${festival['name'].replace(' ', '_') | u}">${festival.get('name_in_locale') or festival['name']}</a></h2>
+      <p><strong>${festival['city']} ${festival['state'] or ''} ${festival['country']}</strong></p>
+      % if festival['start_date'] and festival['end_date']:
+      <p>${festival['start_date'].strftime('%A %d %B %Y')} to ${festival['end_date'].strftime('%A %d %B %Y')}</p>
+      % elif festival['start_date']:
+      <p>${festival['start_date'].strftime('%A %d %B %Y')}</p>
+      % elif festival['approximate_month']:
+      <p>${_("We don't have the exact dates yet, but it's usually in %s") % festival['approximate_month']}.</p>
+      % endif  
+      <p>
+          %if len(festival['description']) > 400:
+  		      ${festival['description'][:400].rsplit(' ', 1)[0] + '...'}
+          %else:
+              ${festival['description']}
+          %endif
+      </p>
+      <p><a class="btn-primary btn" href="/${lang}/festival/${festival['name'].replace(' ', '_') | u}">${_('View details')} &raquo;</a></p>
+	</li>
+% endfor
+</ul>
+
+<div class="row">
+    <div class="span12">
+        <ul class="pager">
+            % if prev_page:
+            <li class="previous">
+            <a href="${prev_page}">&larr; ${_('Previous')}</a>
+            </li>
+            % endif
+            % if next_page:
+            <li class="next">
+            <a href="${next_page}">${_('Next')} &rarr;</a>
+            </li>
+            % endif
+        </ul>
+    </div>
+</div>
+
+

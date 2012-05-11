@@ -1,0 +1,272 @@
+<%inherit file="base.html"/>
+<%!
+import datetime
+from dateutil.tz import gettz
+%>
+
+<% 
+name_in_locale = festival.get('name_in_locale') or festival['name']
+%>
+<%def name="description()">${_('Plan and get recommendations for what to see at %s. See reviews, lineup and act info.') % (festival.get('name_in_locale') or festival['name']) | h}</%def>
+<%def name="title()">${_('%s | recommendations, reviews, line up and dates') % (festival.get('name_in_locale') or festival['name']) | h} </%def>
+<%
+if festival['twitter_pic'] or festival['facebook_pic']:
+    avatar = festival['facebook_pic'] or festival['twitter_pic']
+else:
+    avatar = '/img/no-avatar.png'
+%>
+
+<meta property="og:title" content="${title() | h}" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="${avatar}" />
+<meta property="og:description" content="${description() | h}" />
+<meta property="og:site_name" content="MusicFilmComedy" />
+
+<div class="well">
+    <div class="row">
+	<div class="span4">
+	    <p><h6><a href="mailto:feedback@musicfilmcomedy.com?subject=/festival/${festival['name'].replace(' ', '_')  | u}">${_("Flag incorrect information")}</a></h6></p>
+	</div>
+    </div>
+
+    ## festival details
+    <div class="row-fluid">	
+	<div class="span2">
+	    <img class="size128" alt="${name_in_locale | h}" src="${avatar}">
+	</div>
+	
+	<div class="span6">
+	    <span class="st_fblike_vcount" ></span>
+	    <span class="st_plusone_large"></span>
+	    <span class="st_facebook_large"></span>
+	    <span class="st_twitter_large"></span>
+	    
+	    % if festival['official_site'] is not None:
+		<h2><a href="${festival['official_site']}">${name_in_locale}</a></h2>
+	    % else:
+		<h2>${name_in_locale}</h2>
+	    % endif
+	    	    
+	    <h4>${festival['city']}, ${festival['state'] or ''} ${festival['country']}</h4>
+	    
+	    % if festival['start_date'] and festival['end_date']:
+		<h4>${festival['start_date'].strftime('%A %d %B %Y')} to ${festival['end_date'].strftime('%A %d %B %Y')}</h4>
+	    % elif festival['start_date']:
+		<h4>${festival['start_date'].strftime('%A %d %B %Y')}</h4>
+	    % elif festival['approximate_month']:
+		<p>${_("We don't have the exact dates yet, but it's usually in %s.") % festival['approximate_month']}</p>
+	    % else:
+		<p>${_("We don't have dates for %s yet.") % name_in_locale} </p>
+	    % endif
+	    
+	    <p>
+		<br>
+		<button id="attend-festival" class="btn disabled">${_('Please wait')}</button>
+	    </p>
+	    
+	    <p><div>${self.attr.paragraphs(festival['description'] or festival['about'] or festival['twitter_description'] or '')}</div></p>
+	    % if festival['status'] in ['acts', 'times']:
+            % if not (festival['status'] == 'times' and festival['style'] == 'music'):
+            <p><a href="/${lang}/recommend_acts/${festival['name'].replace(' ', '_') | u}" class="btn btn-primary btn-large">${_('Recommend Acts')} &raquo;</a></p>
+            % endif
+            <%
+            now = datetime.datetime.now(gettz("Australia/Melbourne")).date()
+            %>
+            %if (festival['start_date'] and festival['start_date'].date() < now) and (festival['end_date'] and festival['end_date'].date() > now):
+                % if festival['status'] == 'times' and festival['style'] == 'music':
+                <p><a href="/${lang}/schedule/${festival['name'].replace(' ', '_') | u}?day=${now.isoformat() | u}" class="btn btn-inverse btn-large">${_('Recommended Schedule For Today')} &raquo;</a></p>
+                % else:
+                <p><a href="/${lang}/recommended_acts/${festival['name'].replace(' ', '_') | u}?days=${now.isoformat() | u}" class="btn btn-inverse btn-large">${_('Recommend For Today')} &raquo;</a></p>
+                % endif
+            %else:
+                % if festival['status'] == 'times' and festival['style'] == 'music':
+                <p><a href="/${lang}/schedule/${festival['name'].replace(' ', '_') | u}?day=${festival['start_date'].date().isoformat() | u}" class="btn btn-inverse btn-large">${_('Festival Schedule/Times')} &raquo;</a></p>
+                %endif
+            %endif
+	    %endif
+      </div>
+      <div class="span2">
+	  ${self.ad_top_right()}
+      </div>
+    </div>
+</div>
+
+##lineup
+
+<div class="row">
+    <div class="span8 star_sep">
+	<h2>${_('Lineup:')}</h2>
+	% if len(acts_at_festival) > 0:
+	    % if festival['status'] in ['acts', 'times']:
+		% for act in acts_at_festival:
+		    % if act['name'] in popular_acts:
+			<a class="large_text" href="/${lang}/act/${act['name'].replace(' ', '_') | u}">${act.get('name_in_locale') or act['name']}</a>
+		    % else:
+			<a href="/${lang}/act/${act['name'].replace(' ', '_') | u}">${act.get('name_in_locale') or act['name']}</a>
+		    % endif
+		% endfor
+	    %endif
+	%else:
+	    <p>${_("We don't have a lineup for %s yet.") % name_in_locale}</p>
+	%endif
+	<hr>
+	<p>
+	    <ul id="festival-images" class="thumbnails">
+	    </ul>
+	    
+	    <div class="fb-comments" data-href="http://www.musicfilmcomedy.com/${lang}/festival/${festival['name'].replace(' ', '_') | u}" data-num-posts="2" data-width="500" data-colorscheme="dark">
+	    </div>	    
+	</p>
+    </div>    
+    <div class="span4">
+        <div class="well">
+	    
+	    <div id="friends-box">
+		<h3>${_('Friends attending %s') % (name_in_locale,) }</h3>
+		
+		<div id="festival-no-friends" class="hidden">
+		    <p>${_('None of your friends are attending %s') % (name_in_locale,) }</p>
+		</div>
+		
+		<div id="festival-friends-list" class="hidden">
+		    <ul id="friends-attending" class="unstyled">
+		    </ul>		    
+		</div>
+		
+		<div id="not-facebook-connected" class="hidden">    
+		    <p>${_('Connect with Facebook to see which of your friends are attending %s') % (name_in_locale,)}</p>
+		</div>
+		
+		<hr>
+	    </div>
+	    
+	    % if festival['twitter_name']:
+		<h3>Twitter</h3>
+		<div class="tweet"></div>
+	    % endif
+	</div>
+    </div>
+</div>
+
+<%block name="js">    
+    <script type="text/javascript">
+	% if festival['twitter_name']:
+	    jQuery(function($){
+		$(".tweet").tweet({
+		    username: "${festival['twitter_name']}",
+		    join_text: "auto",
+		    avatar_size: 32,
+		    count: 6,
+		    auto_join_text_default: "we said,", 
+		    auto_join_text_ed: "we",
+		    auto_join_text_ing: "we were",
+		    auto_join_text_reply: "we replied to",
+		    auto_join_text_url: "we were checking out",
+		    loading_text: "loading tweets..."
+		});
+	    });
+	% endif
+	
+	function getFacebookFriends()  {
+	    FB.api('/me/friends', { fields : 'id, name, picture' }, function(response) {
+		if(response) {
+		    items = [];
+		    var all_friends = response.data;
+		    var friend_map = { };
+		    for(i in all_friends) {
+			items.push(all_friends[i].id);
+			friend_map[all_friends[i].id] = all_friends[i];
+		    }
+
+		    $.post('/backend/friends_attending_festival',
+			{ friends: JSON.stringify(items), festival: '${festival['name']}' },
+			function(friends) {
+			    var html = ''
+			    $.each(friends, function(count, item) {
+				var pic = '<img class="friend_avatar" src="' + friend_map[item].picture + '"></img>';
+				html += '<li><p><h4>' + pic + friend_map[item].name + '</h4></p></li>';
+			    });
+			    if(friends.length > 0) {
+				$('#friends-attending').append(html);
+				$('#festival-friends-list').toggleClass('hidden');
+			    }
+			    else {
+				$('#festival-no-friends').toggleClass('hidden');
+			    }
+			}, 'json');		    
+		}
+	    });
+	}
+	
+	$(document).ready(function() {
+	    var attend_text = '${_('Attend')}'
+	    var unattend_text = '${_('Unattend')}'
+	    
+	    var festival = '${festival['name']}';
+	    $('#attend-festival').toggleClass('disabled')
+	    
+	    if(current_user) {
+		% if user_is_attending:
+		    $('#attend-festival').text(unattend_text);
+		    var userAttending = true;		
+		% else:
+		    $('#attend-festival').text(attend_text);
+		    var userAttending = false;
+		% endif
+		
+		$('#attend-festival').click(function() {
+		    if(userAttending) {
+			var postUrl = '/backend/unattend_festival/';
+			var btnText = attend_text;
+		    }
+		    else {
+			var postUrl = '/backend/attend_festival/';
+			var btnText = unattend_text;
+		    }
+		    
+		    $('#attend-festival').toggleClass('disabled');
+		    $.post(postUrl, {'username' : current_user['email'],
+				     'festival' : festival })
+		    .success(function() {
+			$('#attend-festival')
+			    .toggleClass('disabled')
+			    .text(btnText);
+			userAttending = !userAttending;
+		    })
+		    .error(function() {
+			$('#attend-festival')
+			    .toggleClass('disabled')
+			    .text('${_('Error')}');
+		    });
+		});
+	    }
+	    else {
+		$('#attend-festival').text(attend_text);
+		$('#attend-festival').click(function() {
+			mfc.createUserSession( {
+				success : function() { window.location.reload(true); }, 
+				error : function() { } 
+			} );
+		});
+	    }
+	    
+	    // Handle facebook ready event
+	    $("#fb-loader").on("facebookReady", function() {
+		FB.getLoginStatus(function(response) {
+		    if(response.status === 'connected') {
+			if(current_user) {
+			    if(current_user.facebook_id == FB.getUserID()) {			
+				getFacebookFriends();
+			    }
+			}
+		    }
+		    else {
+			$('#not-facebook-connected').toggleClass('hidden');
+		    }
+		});		
+	    });
+	    
+	    mfc.loadFlickrImages('festival-images', '${festival['name']}', 12);
+	});
+    </script>
+</%block>

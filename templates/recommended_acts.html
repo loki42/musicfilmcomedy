@@ -1,0 +1,28 @@
+<%inherit file="base.html"/>
+<%def name="description()">${_('Plan and get recommendations for what to see at %s. See reviews, lineup and act info.') % festival}</%def>
+<%def name="title()">${_('%s | Recommendations') % festival}</%def>
+
+<div class="page-header">
+<h1>${_('Recommended Acts for %s.') % festival}</h1>
+</div>
+<p><strong>${_("Click on the acts to get the times, we're making this nicer at the moment and will have something better up soon.")}</strong></p>
+
+% for act in acts:
+<ul class="unstyled">
+    <li>
+        <h2><a href="/${lang}/act/${act['name'].replace(' ', '_')}">${act.get('name_in_locale') or act['name']}</a></h2>
+        <p><strong>${act['genre'] or ''}</strong></p>
+        <p>
+            <% desc = self.attr.paragraphs(act['description'] or act['about'] or act['twitter_description'] or '') %>
+            %if len(desc) > 400:
+  		        ${desc[:400].rsplit(' ', 1)[0] + '...'}
+            %else:
+                ${desc}
+            %endif
+        </p>
+        <p><a class="btn-primary btn" href="/${lang}/act/${act['name'].replace(' ', '_')}">${_('View details')} &raquo;</a></p>
+    </li>
+</ul>
+% endfor
+
+

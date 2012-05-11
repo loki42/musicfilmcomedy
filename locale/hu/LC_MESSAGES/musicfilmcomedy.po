@@ -1,0 +1,292 @@
+# Hungarian translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-04-04 17:44+1000\n"
+"PO-Revision-Date: 2012-04-01 20:02+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: hu <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: templates/act.html:9
+#, fuzzy, python-format
+msgid ""
+"festival appearances for %s in 2012. Reviews, info and recommendations."
+msgstr "A(z) %s fesztivál látszat 2012-ben. Vélemények, info és ajánlásokat."
+
+#: templates/act.html:10
+#, python-format
+msgid "%s | Festival Tour Dates 2012"
+msgstr "%s | Fesztivál Kocert dátumok 2012"
+
+#: templates/act.html:14 templates/festival.html:17
+msgid "Flag incorrect information"
+msgstr "Helytelen jelzőinformáció"
+
+#: templates/act.html:34 templates/act.html:37
+msgid "unknown"
+msgstr "Ismeretlen"
+
+#: templates/act.html:43
+msgid "Back"
+msgstr "Vissza:"
+
+#: templates/act.html:93
+#, python-format
+msgid "%s is on at:"
+msgstr "a(z) %s helyen:"
+
+#: templates/act.html:166
+msgid "What people on twitter think"
+msgstr "Hiszem, amit az emberek a twitter"
+
+#: templates/base.html:60 templates/list_countries.html:5
+msgid "List By Country"
+msgstr "Listája országonként"
+
+#: templates/base.html:65
+msgid "Search"
+msgstr "Keresés"
+
+#: templates/base.html:69
+msgid "Feedback"
+msgstr "Visszajelzés"
+
+#: templates/base.html:72
+msgid "Language"
+msgstr "Nyelv"
+
+#: templates/base.html:83
+msgid "Other"
+msgstr "Egyéb"
+
+#: templates/choose_language.html:2 templates/index.html:2
+#: templates/list_countries.html:2
+#: templates/list_festivals_from_country.html:2
+#: templates/search_festivals.html:2
+msgid ""
+"Music Film Comedy helps you decide what to see at a festival with great "
+"recommendations and info."
+msgstr ""
+"Zene Film vígjáték segít eldöntheti, hogy mi talál nagy ajánlásokat és info "
+"a fesztiválon."
+
+#: templates/choose_language.html:3
+#, fuzzy
+msgid "Choose Language | The Best Act/Film Recommendations"
+msgstr "Keresés a fesztiválok | A legjobb Act/Film ajánlások"
+
+#: templates/choose_language.html:5
+msgid "Choose Language"
+msgstr "Válasszon nyelvet"
+
+#: templates/festival.html:10 templates/recommend_acts.html:2
+#: templates/recommended_acts.html:2
+#, python-format
+msgid ""
+"Plan and get recommendations for what to see at %s. See reviews, lineup and "
+"act info."
+msgstr ""
+"Terv, és ajánlásokat, lásd: %s, hogy mit kap. Lásd: véleménye, felállás, és "
+"a törvény info."
+
+#: templates/festival.html:11
+#, python-format
+msgid "%s | recommendations, reviews, line up and dates"
+msgstr "%s | ajánlások, vélemények, sor legfeljebb és dátumok"
+
+#: templates/festival.html:42
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s."
+msgstr "Még a pontos dátumok nem rendelkezünk, de rendszerint %s."
+
+#: templates/festival.html:44
+#, python-format
+msgid "We don't have dates for %s yet."
+msgstr "A(z) %s dátumok még nem rendelkezünk."
+
+#: templates/festival.html:51
+msgid "Recommend Acts"
+msgstr "Javasoljuk a jogi aktusok"
+
+#: templates/festival.html:56
+msgid "Recommend For Today"
+msgstr "Ajánljuk, ma"
+
+#: templates/festival.html:59
+#, python-format
+msgid "We don't have a lineup for %s yet."
+msgstr "A felállás a(z) %s még nem rendelkezünk."
+
+#: templates/festival.html:72
+msgid "Lineup:"
+msgstr "Felállás:"
+
+#: templates/index.html:3
+msgid "MusicFilmComedy - Festivals and The Best Act/Film Recommendations"
+msgstr "MusicFilmComedy - a fesztiválok és a tanácsairól Act/Film"
+
+#: templates/index.html:6
+msgid "Featured Festival"
+msgstr "Kiemelt szálláshelyek az alábbi Fesztivál"
+
+#: templates/index.html:9
+msgid "MusicFilmComedy allows you to find and plan what to see at a festival."
+msgstr "MusicFilmComedy lehetővé teszi a keresés, és mit lásd a fesztiválon."
+
+#: templates/index.html:12
+msgid "e.g. summerfest, france, blues"
+msgstr "pl. summerfest, Franciaország, blues"
+
+#: templates/index.html:13
+msgid "Search Festivals"
+msgstr "Keresés fesztiválok"
+
+#: templates/index.html:16
+msgid ""
+"Please give us feedback if you find issues! We are still testing and would "
+"love any ideas or suggestions."
+msgstr ""
+"Kérjük megadja nekünk visszajelzést ha találsz a kérdések! Mi még tesztelés "
+"és akar szerelem minden olyan ötleteket, vagy javaslatokat."
+
+#: templates/index.html:22
+msgid "Upcoming Nearby Festivals"
+msgstr "Közelgő közeli fesztiválok"
+
+#: templates/index.html:26
+msgid "Other Featured Festivals"
+msgstr "Egyéb kiemelt fesztiválok"
+
+#: templates/index.html:38
+msgid "Upcoming Festivals"
+msgstr "Közelgő fesztiválok"
+
+#: templates/index.html:46
+msgid "Popular Acts"
+msgstr "Népszerű jogi aktusok"
+
+#: templates/list_countries.html:3
+#: templates/list_festivals_from_country.html:3
+#, fuzzy
+msgid "List Festivals By Country | The Best Act/Film Recommendations"
+msgstr "Keresés a fesztiválok | A legjobb Act/Film ajánlások"
+
+#: templates/list_festivals_from_country.html:19
+#: templates/search_festivals.html:30
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s"
+msgstr ""
+"Még a pontos dátumok nem rendelkezünk, de általában a következőben: %s"
+
+#: templates/list_festivals_from_country.html:28
+#: templates/recommended_acts.html:23 templates/search_festivals.html:39
+msgid "View details"
+msgstr "Részletek megjelenítése"
+
+#: templates/recommend_acts.html:3
+#, python-format
+msgid "%s | Enter your preferences or get magical recommendations"
+msgstr ""
+"%s | Adja meg a kívánt beállításokat, vagy kap a varázslatos ajánlások"
+
+#: templates/recommend_acts.html:7
+#, python-format
+msgid "Magical Recommendations for %s. "
+msgstr "Varázslatos ajánlások: %s. "
+
+#: templates/recommend_acts.html:9
+#, python-format
+msgid ""
+"Click the big button to get our recommendations for %s. Our recommendations "
+"are based on a magic mixture of popularity (facebook/twitter/web) and "
+"reviews."
+msgstr ""
+"Kattintson a nagy gomb-hoz kap Ajánlásaink: %s. Ajánlásaink népszerűsége "
+"(facebook/twitter/web) és értékelések magic keveréke alapulnak."
+
+#: templates/recommend_acts.html:10
+msgid "Magical"
+msgstr "Varázslatos"
+
+#: templates/recommend_acts.html:11
+msgid "or"
+msgstr "vagy"
+
+#: templates/recommend_acts.html:12
+msgid "choose your preferences."
+msgstr "Válassza a beállítások menüpontot."
+
+#: templates/recommend_acts.html:19
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: templates/recommend_acts.html:22
+msgid "Genres you are interested in:"
+msgstr "Műfajok érdekli:"
+
+#: templates/recommend_acts.html:36
+msgid "Days:"
+msgstr "Nap:"
+
+#: templates/recommend_acts.html:48
+msgid "We don't have enough data about this festival to provide preferences."
+msgstr ""
+"Nem rendelkezünk elegendő adat kapcsolatos beállítások nyújtson a fesztivál."
+
+#: templates/recommend_acts.html:53
+msgid "Magically with your preferences"
+msgstr "A beállításait tartalmazó varázslatosan"
+
+#: templates/recommended_acts.html:3
+#, python-format
+msgid "%s | Recommendations"
+msgstr "%s | Ajánlások"
+
+#: templates/recommended_acts.html:6
+#, python-format
+msgid "Recommended Acts for %s."
+msgstr "Javasolt aktusok: %s."
+
+#: templates/recommended_acts.html:8
+msgid ""
+"Click on the acts to get the times, we're making this nicer at the moment "
+"and will have something better up soon."
+msgstr ""
+"Kattintson a jogi aktusok-e a kap az idők, mi nyomatott ez szebb abban a "
+"pillanatban, és hamarosan lesz valami jobb megjelöl."
+
+#: templates/search_festivals.html:3
+msgid "Search Festivals | The Best Act/Film Recommendations"
+msgstr "Keresés a fesztiválok | A legjobb Act/Film ajánlások"
+
+#: templates/search_festivals.html:7
+msgid "Search Results"
+msgstr "Keresési eredmények"
+
+#: templates/search_festivals.html:13
+msgid ""
+"No festivals found. We are trying to add more festivals all the time. If you"
+" have details for a festival that you think we should have please contact us"
+msgstr ""
+"Nincs fesztiválok talált. Megpróbáljuk hozzáadása több fesztiválok minden "
+"alkalommal. Ha a részletek a fesztivál, gondolod, hogy mi kell van kérjük "
+"lépjen kapcsolatba velünk"
+
+#: templates/search_festivals.html:49
+msgid "Previous"
+msgstr "Előző"
+
+#: templates/search_festivals.html:54
+msgid "Next"
+msgstr "Következő"

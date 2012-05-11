@@ -1,0 +1,147 @@
+<%inherit file="base.html"/>
+<%!
+import datetime
+from dateutil.tz import gettz
+%>
+
+<% 
+name_in_locale = festival.get('name_in_locale') or festival['name']
+%>
+<%def name="description()">${_('Plan and get recommendations for what to see at %s. See reviews, lineup and act info.') % (festival.get('name_in_locale') or festival['name'])}</%def>
+<%def name="title()">${_('%s | recommendations, reviews, line up and dates') % (festival.get('name_in_locale') or festival['name'])} </%def>
+
+## some breadcrumbs 
+<div class="well">
+    <div class="row">
+        <div class="span4">
+            <a href="mailto:feedback@musicfilmcomedy.com?subject=/festival/${festival['name'].replace(' ', '_')}"><h6>${_("Flag incorrect information")}</h6></a>
+        </div>
+    </div>
+
+    ## festival details
+    <div class="row-fluid">
+        <div class="span2">
+            % if festival['twitter_pic'] or festival['facebook_pic']:
+                <img class="size128" alt="${name_in_locale}" src="${festival['facebook_pic'] or festival['twitter_pic']}">
+            % else:
+                <img class="size128" alt="${act['name']}" src="no-avatar.png">
+            % endif
+        </div>
+        <div class="span6">
+           <h2>${name_in_locale}</h2>
+				% if festival['official_site'] is not None:
+					<h3><a href="${festival['official_site']}">${festival['official_site']}</a></h3>
+				% endif
+
+	         <h3>${festival['city']}, ${festival['state'] or ''} ${festival['country']} 
+	         % if festival['start_date'] and festival['end_date']:
+             <p>${festival['start_date'].strftime('%A %d %B %Y')} to ${festival['end_date'].strftime('%A %d %B %Y')}</p>
+             % elif festival['start_date']:
+             <p>${festival['start_date'].strftime('%A %d %B %Y')}</p>
+	         % elif festival['approximate_month']:
+             <p>${_("We don't have the exact dates yet, but it's usually in %s.") % festival['approximate_month']}</p>
+	         % else:
+	            <p>${_("We don't have dates for %s yet.") % name_in_locale} </p>
+	         % endif
+
+			<div>${self.attr.paragraphs(festival['description'] or festival['about'] or festival['twitter_description'] or '')}</div>
+			##<p>You can select acts manually or get acts recommend automagically.</p>
+            ##<p><a href="/${lang}/recommend_acts/${festival['name'].replace(' ', '_')}" class="btn btn-primary btn-large">${_('View Lineup')} &raquo;</a></p>
+			% if festival['status'] in ['acts', 'times']:
+            <p><a href="/${lang}/recommend_acts/${festival['name'].replace(' ', '_')}" class="btn btn-primary btn-large">${_('Recommend Acts')} &raquo;</a></p>
+            <%
+            now = datetime.datetime.now(gettz("Australia/Melbourne")).date()
+            %>
+                %if festival['start_date'].date() < now and festival['end_date'].date() > now:
+                <p><a href="/${lang}/recommended_acts/${festival['name'].replace(' ', '_') | u}?days=${now.isoformat() | u}" class="btn btn-inverse btn-large">${_('Recommend For Today')} &raquo;</a></p>
+                %endif
+			% else: 
+			<p>${_("We don't have a lineup for %s yet.") % name_in_locale}</p>
+			% endif
+      </div>
+      <div class="span2">
+          ${self.ad_top_right()}
+      </div>
+    </div>
+</div>
+
+##lineup
+% if festival['status'] in ['acts', 'times']:
+    <div class="row-fluid">
+        <div class="span8 star_sep">
+            <h2>${_('Lineup:')}</h2>
+            % for act in acts_at_festival:
+                % if act['name'] in popular_acts:
+                    <a class="large_text" href="/${lang}/act/${act['name'].replace(' ', '_')}">${act['name']}</a>
+                % else:
+                    <a href="/${lang}/act/${act['name'].replace(' ', '_')}">${act['name']}</a>
+                % endif
+            % endfor
+        </div>
+        <div class="span4">
+          % if festival['twitter_name']:
+          <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+          <script>
+              new TWTR.Widget({
+                  version: 2,
+                  type: 'profile',
+                  rpp: 4,
+                  interval: 30000,
+                  width: 250,
+                  height: 300,
+                  theme: {
+                      shell: {
+                          background: '#333333',
+                          color: '#ffffff'
+                      },
+                      tweets: {
+                          background: '#000000',
+                          color: '#ffffff',
+                          links: '#4aed05'
+                      }
+                  },
+                  features: {
+                      scrollbar: false,
+                      loop: false,
+                      live: true,
+                      behavior: 'all'
+                  }
+              }).render().setUser('${festival['twitter_name']}').start();
+          </script>
+          % endif
+        </div>
+    </div>
+% endif
+
+<!-- Start of Flickr Badge -->
+<style type="text/css">
+#flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#666666;}
+#flickr_badge_icon {display:block !important; margin:0 !important; border: 1px solid rgb(0, 0, 0) !important;}
+#flickr_icon_td {padding:0 5px 0 0 !important;}
+.flickr_badge_image {text-align:center !important;}
+.flickr_badge_image img {border: 1px solid black !important;}
+#flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+#flickr_badge_uber_wrapper a:hover,
+#flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+#flickr_badge_wrapper {}
+#flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+</style>
+<table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0"><tr><td><a href="http://www.flickr.com" id="flickr_www">www.<strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span></strong>.com</a><table cellpadding="0" cellspacing="10" border="0" id="flickr_badge_wrapper">
+<tr>
+<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=10&display=random&size=t&layout=h&source=all_tag&tag=${festival['name'].replace(' ', '+') | u}"></script>
+</tr>
+</table>
+</td></tr></table>
+<!-- End of Flickr Badge -->
+
+</br>
+</br>
+<<<<<<< HEAD
+<div class="fb-comments" data-href="http://www.musicfilmcomedy.com/${lang}/festival/${festival['name'].replace(' ', '_') | u}" data-num-posts="2" data-width="500" data-colorscheme="dark">
+=======
+
+<div class="fb-comments" data-href="http://www.musicfilmcomedy.com/festival/${festival['name'].replace(' ', '_') | u}" data-num-posts="2" data-width="500" data-colorscheme="dark">
+>>>>>>> 725712ed4510f82ae629db1f9994af6712c687de
+</div>

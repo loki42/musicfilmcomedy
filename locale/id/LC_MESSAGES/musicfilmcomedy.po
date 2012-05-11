@@ -1,0 +1,295 @@
+# Indonesian translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-04-04 17:44+1000\n"
+"PO-Revision-Date: 2012-04-01 20:00+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: id <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: templates/act.html:9
+#, fuzzy, python-format
+msgid ""
+"festival appearances for %s in 2012. Reviews, info and recommendations."
+msgstr ""
+"Festival penampilan untuk %s pada tahun 2012. Ulasan, info dan rekomendasi."
+
+#: templates/act.html:10
+#, python-format
+msgid "%s | Festival Tour Dates 2012"
+msgstr "%s | Festival Tour tanggal 2012"
+
+#: templates/act.html:14 templates/festival.html:17
+msgid "Flag incorrect information"
+msgstr "Bendera informasi yang salah"
+
+#: templates/act.html:34 templates/act.html:37
+msgid "unknown"
+msgstr "tidak diketahui"
+
+#: templates/act.html:43
+msgid "Back"
+msgstr "Kembali"
+
+#: templates/act.html:93
+#, python-format
+msgid "%s is on at:"
+msgstr "%s adalah pada di:"
+
+#: templates/act.html:166
+msgid "What people on twitter think"
+msgstr "Apa orang pada kegugupan berpikir"
+
+#: templates/base.html:60 templates/list_countries.html:5
+msgid "List By Country"
+msgstr "Daftar menurut negara"
+
+#: templates/base.html:65
+msgid "Search"
+msgstr "Pencarian"
+
+#: templates/base.html:69
+msgid "Feedback"
+msgstr "Umpan balik"
+
+#: templates/base.html:72
+msgid "Language"
+msgstr "Bahasa"
+
+#: templates/base.html:83
+msgid "Other"
+msgstr "Lain"
+
+#: templates/choose_language.html:2 templates/index.html:2
+#: templates/list_countries.html:2
+#: templates/list_festivals_from_country.html:2
+#: templates/search_festivals.html:2
+msgid ""
+"Music Film Comedy helps you decide what to see at a festival with great "
+"recommendations and info."
+msgstr ""
+"Musik Film komedi membantu Anda memutuskan apa yang harus melihat pada "
+"festival dengan rekomendasi yang besar dan info."
+
+#: templates/choose_language.html:3
+#, fuzzy
+msgid "Choose Language | The Best Act/Film Recommendations"
+msgstr "Cari Festival | Rekomendasi Act/Film terbaik"
+
+#: templates/choose_language.html:5
+msgid "Choose Language"
+msgstr "Pilih bahasa"
+
+#: templates/festival.html:10 templates/recommend_acts.html:2
+#: templates/recommended_acts.html:2
+#, python-format
+msgid ""
+"Plan and get recommendations for what to see at %s. See reviews, lineup and "
+"act info."
+msgstr ""
+"Rencana dan mendapatkan rekomendasi untuk apa yang harus melihat pada %s. "
+"Lihat Review, lineup dan undang-undang info."
+
+#: templates/festival.html:11
+#, python-format
+msgid "%s | recommendations, reviews, line up and dates"
+msgstr "%s | rekomendasi, Review, baris atas dan tanggal"
+
+#: templates/festival.html:42
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s."
+msgstr "Kami tidak memiliki tanggal yang pasti belum, tapi biasanya di %s."
+
+#: templates/festival.html:44
+#, python-format
+msgid "We don't have dates for %s yet."
+msgstr "Kami tidak memiliki tanggal untuk %s belum."
+
+#: templates/festival.html:51
+msgid "Recommend Acts"
+msgstr "Merekomendasikan tindakan"
+
+#: templates/festival.html:56
+msgid "Recommend For Today"
+msgstr "Merekomendasikan untuk hari ini"
+
+#: templates/festival.html:59
+#, python-format
+msgid "We don't have a lineup for %s yet."
+msgstr "Kami tidak memiliki lineup untuk %s belum."
+
+#: templates/festival.html:72
+msgid "Lineup:"
+msgstr "Lineup:"
+
+#: templates/index.html:3
+msgid "MusicFilmComedy - Festivals and The Best Act/Film Recommendations"
+msgstr "MusicFilmComedy - Festival dan rekomendasi Act/Film terbaik"
+
+#: templates/index.html:6
+msgid "Featured Festival"
+msgstr "Festival menampilkan"
+
+#: templates/index.html:9
+msgid "MusicFilmComedy allows you to find and plan what to see at a festival."
+msgstr ""
+"MusicFilmComedy memungkinkan Anda untuk menemukan dan merencanakan apa yang "
+"harus melihat di sebuah festival."
+
+#: templates/index.html:12
+msgid "e.g. summerfest, france, blues"
+msgstr "misalnya summerfest, Perancis, blues"
+
+#: templates/index.html:13
+msgid "Search Festivals"
+msgstr "Pencarian Festival"
+
+#: templates/index.html:16
+msgid ""
+"Please give us feedback if you find issues! We are still testing and would "
+"love any ideas or suggestions."
+msgstr ""
+"Tolong beri kami umpan balik jika Anda menemukan masalah! Kami masih "
+"pengujian dan akan senang setiap ide atau saran."
+
+#: templates/index.html:22
+msgid "Upcoming Nearby Festivals"
+msgstr "Mendatang di dekatnya Festival"
+
+#: templates/index.html:26
+msgid "Other Featured Festivals"
+msgstr "Other Feature Festival"
+
+#: templates/index.html:38
+msgid "Upcoming Festivals"
+msgstr "Festival mendatang"
+
+#: templates/index.html:46
+msgid "Popular Acts"
+msgstr "Kisah Para Rasul populer"
+
+#: templates/list_countries.html:3
+#: templates/list_festivals_from_country.html:3
+#, fuzzy
+msgid "List Festivals By Country | The Best Act/Film Recommendations"
+msgstr "Cari Festival | Rekomendasi Act/Film terbaik"
+
+#: templates/list_festivals_from_country.html:19
+#: templates/search_festivals.html:30
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s"
+msgstr "Kami tidak memiliki tanggal yang pasti belum, tetapi biasanya %s"
+
+#: templates/list_festivals_from_country.html:28
+#: templates/recommended_acts.html:23 templates/search_festivals.html:39
+msgid "View details"
+msgstr "Lihat rincian"
+
+#: templates/recommend_acts.html:3
+#, python-format
+msgid "%s | Enter your preferences or get magical recommendations"
+msgstr "%s | Masukkan preferensi atau mendapatkan rekomendasi ajaib"
+
+#: templates/recommend_acts.html:7
+#, python-format
+msgid "Magical Recommendations for %s. "
+msgstr "Rekomendasi ajaib untuk %s. "
+
+#: templates/recommend_acts.html:9
+#, python-format
+msgid ""
+"Click the big button to get our recommendations for %s. Our recommendations "
+"are based on a magic mixture of popularity (facebook/twitter/web) and "
+"reviews."
+msgstr ""
+"Klik tombol besar untuk mendapatkan rekomendasi kami untuk %s. Rekomendasi "
+"kami didasarkan pada campuran sihir popularitas (facebook/twitter/web) dan "
+"ulasan."
+
+#: templates/recommend_acts.html:10
+msgid "Magical"
+msgstr "Ajaib"
+
+#: templates/recommend_acts.html:11
+msgid "or"
+msgstr "atau"
+
+#: templates/recommend_acts.html:12
+msgid "choose your preferences."
+msgstr "memilih preferensi Anda."
+
+#: templates/recommend_acts.html:19
+msgid "Preferences"
+msgstr "Preferensi"
+
+#: templates/recommend_acts.html:22
+msgid "Genres you are interested in:"
+msgstr "Genre Anda tertarik:"
+
+#: templates/recommend_acts.html:36
+msgid "Days:"
+msgstr "Hari:"
+
+#: templates/recommend_acts.html:48
+msgid "We don't have enough data about this festival to provide preferences."
+msgstr ""
+"Kita tidak punya cukup data tentang festival ini untuk memberikan "
+"preferensi."
+
+#: templates/recommend_acts.html:53
+msgid "Magically with your preferences"
+msgstr "Ajaib dengan preferensi"
+
+#: templates/recommended_acts.html:3
+#, python-format
+msgid "%s | Recommendations"
+msgstr "%s | Rekomendasi"
+
+#: templates/recommended_acts.html:6
+#, python-format
+msgid "Recommended Acts for %s."
+msgstr "Direkomendasikan tindakan untuk %s."
+
+#: templates/recommended_acts.html:8
+msgid ""
+"Click on the acts to get the times, we're making this nicer at the moment "
+"and will have something better up soon."
+msgstr ""
+"Klik pada tindakan untuk mendapatkan waktu, kami membuat ini lebih baik saat"
+" ini dan akan memiliki sesuatu yang lebih baik atas segera."
+
+#: templates/search_festivals.html:3
+msgid "Search Festivals | The Best Act/Film Recommendations"
+msgstr "Cari Festival | Rekomendasi Act/Film terbaik"
+
+#: templates/search_festivals.html:7
+msgid "Search Results"
+msgstr "Hasil pencarian"
+
+#: templates/search_festivals.html:13
+msgid ""
+"No festivals found. We are trying to add more festivals all the time. If you"
+" have details for a festival that you think we should have please contact us"
+msgstr ""
+"Festival tidak ditemukan. Kami berusaha untuk menambah lebih banyak Festival"
+" sepanjang waktu. Jika Anda memiliki rincian untuk festival yang Anda pikir "
+"kita harus memiliki silahkan hubungi kami"
+
+#: templates/search_festivals.html:49
+msgid "Previous"
+msgstr "Sebelumnya"
+
+#: templates/search_festivals.html:54
+msgid "Next"
+msgstr "Berikutnya"

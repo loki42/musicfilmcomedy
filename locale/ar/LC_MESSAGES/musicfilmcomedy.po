@@ -1,0 +1,289 @@
+# Arabic translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-04-04 17:44+1000\n"
+"PO-Revision-Date: 2012-04-01 20:17+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ar <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5)\n"
+
+#: templates/act.html:9
+#, fuzzy, python-format
+msgid ""
+"festival appearances for %s in 2012. Reviews, info and recommendations."
+msgstr "مهرجان مباراة%s في عام 2012. ملاحظات ومعلومات وتوصيات."
+
+#: templates/act.html:10
+#, python-format
+msgid "%s | Festival Tour Dates 2012"
+msgstr "%s | مهرجان جولة التواريخ 2012"
+
+#: templates/act.html:14 templates/festival.html:17
+msgid "Flag incorrect information"
+msgstr "علم المعلومات غير صحيحة"
+
+#: templates/act.html:34 templates/act.html:37
+msgid "unknown"
+msgstr "غير معروف"
+
+#: templates/act.html:43
+msgid "Back"
+msgstr "مرة أخرى"
+
+#: templates/act.html:93
+#, python-format
+msgid "%s is on at:"
+msgstr "%s المعني في:"
+
+#: templates/act.html:166
+msgid "What people on twitter think"
+msgstr "أعتقد ما الناس على التغريد"
+
+#: templates/base.html:60 templates/list_countries.html:5
+msgid "List By Country"
+msgstr "قائمة حسب البلد"
+
+#: templates/base.html:65
+msgid "Search"
+msgstr "البحث"
+
+#: templates/base.html:69
+msgid "Feedback"
+msgstr "ردود الفعل"
+
+#: templates/base.html:72
+msgid "Language"
+msgstr "لغة"
+
+#: templates/base.html:83
+msgid "Other"
+msgstr "الأخرى"
+
+#: templates/choose_language.html:2 templates/index.html:2
+#: templates/list_countries.html:2
+#: templates/list_festivals_from_country.html:2
+#: templates/search_festivals.html:2
+msgid ""
+"Music Film Comedy helps you decide what to see at a festival with great "
+"recommendations and info."
+msgstr ""
+"موسيقى \"فيلم كوميدي\" يساعدك على اتخاذ قرار ما لرؤية في مهرجان مع توصيات "
+"كبيرة ومعلومات."
+
+#: templates/choose_language.html:3
+#, fuzzy
+msgid "Choose Language | The Best Act/Film Recommendations"
+msgstr "البحث عن المهرجانات | توصيات قانون/الفيلم أفضل"
+
+#: templates/choose_language.html:5
+msgid "Choose Language"
+msgstr "اختر اللغة"
+
+#: templates/festival.html:10 templates/recommend_acts.html:2
+#: templates/recommended_acts.html:2
+#, python-format
+msgid ""
+"Plan and get recommendations for what to see at %s. See reviews, lineup and "
+"act info."
+msgstr ""
+"خطة والحصول على توصيات من أجل ماذا نرى في%s. انظر الاستعراضات، وقانون "
+"وتشكيله من المعلومات."
+
+#: templates/festival.html:11
+#, python-format
+msgid "%s | recommendations, reviews, line up and dates"
+msgstr "%s | التوصيات، الاستعراضات، خط يصل والتواريخ"
+
+#: templates/festival.html:42
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s."
+msgstr "ليس لدينا التواريخ المحددة حتى الآن، إلا أنها عادة في%s."
+
+#: templates/festival.html:44
+#, python-format
+msgid "We don't have dates for %s yet."
+msgstr "ليس لدينا التواريخ ل%s بعد."
+
+#: templates/festival.html:51
+msgid "Recommend Acts"
+msgstr "التوصية بأعمال"
+
+#: templates/festival.html:56
+msgid "Recommend For Today"
+msgstr "يوصي لهذا اليوم"
+
+#: templates/festival.html:59
+#, python-format
+msgid "We don't have a lineup for %s yet."
+msgstr "ليس لدينا تشكيلة ل%s حتى الآن."
+
+#: templates/festival.html:72
+msgid "Lineup:"
+msgstr "تشكيلة الفريق:"
+
+#: templates/index.html:3
+msgid "MusicFilmComedy - Festivals and The Best Act/Film Recommendations"
+msgstr "موسيكفيلمكوميدي-مهرجانات وتوصيات قانون/الفيلم أفضل"
+
+#: templates/index.html:6
+msgid "Featured Festival"
+msgstr "مهرجان المميز"
+
+#: templates/index.html:9
+msgid "MusicFilmComedy allows you to find and plan what to see at a festival."
+msgstr "يسمح لك العثور على وخطة ما لرؤية في مهرجان موسيكفيلمكوميدي."
+
+#: templates/index.html:12
+msgid "e.g. summerfest, france, blues"
+msgstr "مثل سوميرفيست، فرنسا، بلوز"
+
+#: templates/index.html:13
+msgid "Search Festivals"
+msgstr "مهرجانات البحث"
+
+#: templates/index.html:16
+msgid ""
+"Please give us feedback if you find issues! We are still testing and would "
+"love any ideas or suggestions."
+msgstr ""
+"يرجى تعطينا ردود الفعل إذا لم تجد القضايا! ونحن لا تزال تختبره وأحب أي أفكار"
+" أو اقتراحات."
+
+#: templates/index.html:22
+msgid "Upcoming Nearby Festivals"
+msgstr "المقبلة القريبة المهرجانات"
+
+#: templates/index.html:26
+msgid "Other Featured Festivals"
+msgstr "أخرى تميز المهرجانات"
+
+#: templates/index.html:38
+msgid "Upcoming Festivals"
+msgstr "المهرجانات القادمة"
+
+#: templates/index.html:46
+msgid "Popular Acts"
+msgstr "أعمال شعبية"
+
+#: templates/list_countries.html:3
+#: templates/list_festivals_from_country.html:3
+#, fuzzy
+msgid "List Festivals By Country | The Best Act/Film Recommendations"
+msgstr "البحث عن المهرجانات | توصيات قانون/الفيلم أفضل"
+
+#: templates/list_festivals_from_country.html:19
+#: templates/search_festivals.html:30
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s"
+msgstr "ليس لدينا التواريخ المحددة حتى الآن، إلا أنها عادة في%s"
+
+#: templates/list_festivals_from_country.html:28
+#: templates/recommended_acts.html:23 templates/search_festivals.html:39
+msgid "View details"
+msgstr "عرض التفاصيل"
+
+#: templates/recommend_acts.html:3
+#, python-format
+msgid "%s | Enter your preferences or get magical recommendations"
+msgstr "%s | أدخل التفضيلات الخاصة بك أو الحصول على توصيات السحرية"
+
+#: templates/recommend_acts.html:7
+#, python-format
+msgid "Magical Recommendations for %s. "
+msgstr "توصيات السحري ل%s. "
+
+#: templates/recommend_acts.html:9
+#, python-format
+msgid ""
+"Click the big button to get our recommendations for %s. Our recommendations "
+"are based on a magic mixture of popularity (facebook/twitter/web) and "
+"reviews."
+msgstr ""
+"انقر فوق الزر الكبير للحصول على توصياتنا ل%s. وتستند توصياتنا خليط سحرية "
+"شعبية (أمام/التغريد/ويب) وملاحظات."
+
+#: templates/recommend_acts.html:10
+msgid "Magical"
+msgstr "السحري"
+
+#: templates/recommend_acts.html:11
+msgid "or"
+msgstr "أو"
+
+#: templates/recommend_acts.html:12
+msgid "choose your preferences."
+msgstr "اختيار التفضيلات الخاصة بك."
+
+#: templates/recommend_acts.html:19
+msgid "Preferences"
+msgstr "تفضيلات"
+
+#: templates/recommend_acts.html:22
+msgid "Genres you are interested in:"
+msgstr "الأنواع التي تهمك:"
+
+#: templates/recommend_acts.html:36
+msgid "Days:"
+msgstr "الأيام:"
+
+#: templates/recommend_acts.html:48
+msgid "We don't have enough data about this festival to provide preferences."
+msgstr "ليس لدينا ما يكفي من البيانات حول هذا المهرجان لتوفير التفضيلات."
+
+#: templates/recommend_acts.html:53
+msgid "Magically with your preferences"
+msgstr "سحرية مع التفضيلات الخاصة بك"
+
+#: templates/recommended_acts.html:3
+#, python-format
+msgid "%s | Recommendations"
+msgstr "%s | توصيات"
+
+#: templates/recommended_acts.html:6
+#, python-format
+msgid "Recommended Acts for %s."
+msgstr "وأوصى أعمال ل%s."
+
+#: templates/recommended_acts.html:8
+msgid ""
+"Click on the acts to get the times, we're making this nicer at the moment "
+"and will have something better up soon."
+msgstr ""
+"انقر فوق الأعمال للحصول على العصر، ونحن نحقق هذا أجمل في هذه اللحظة وسيكون "
+"شيئا أفضل حتى وقت قريب."
+
+#: templates/search_festivals.html:3
+msgid "Search Festivals | The Best Act/Film Recommendations"
+msgstr "البحث عن المهرجانات | توصيات قانون/الفيلم أفضل"
+
+#: templates/search_festivals.html:7
+msgid "Search Results"
+msgstr "نتائج البحث"
+
+#: templates/search_festivals.html:13
+msgid ""
+"No festivals found. We are trying to add more festivals all the time. If you"
+" have details for a festival that you think we should have please contact us"
+msgstr ""
+"المهرجانات لم يتم العثور على. أننا نحاول إضافة مزيد من المهرجانات طوال "
+"الوقت. إذا كان لديك تفاصيل لمهرجان التي تظن أننا ينبغي أن يكون يرجى الاتصال "
+"بنا"
+
+#: templates/search_festivals.html:49
+msgid "Previous"
+msgstr "السابقة"
+
+#: templates/search_festivals.html:54
+msgid "Next"
+msgstr "القادم"

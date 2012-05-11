@@ -1,0 +1,316 @@
+<%inherit file="base.html"/>
+<%def name="description()">${_('Plan and get recommendations for what to see at %s. See reviews, lineup and act info.') % festival}</%def>
+<%def name="title()">${_("%s | Enter your preferences or get magical recommendations") % festival}</%def>
+<%
+import re, string
+import datetime
+from dateutil.parser import parse
+
+time_pixel_factor = 60 # 2 minutes per pixel
+pixels_in_hour = 3600 / time_pixel_factor
+
+def time_to_pixel(start_time, time):
+    return (time - start_time).seconds / time_pixel_factor
+
+pattern = re.compile('[\W_]+')
+
+def safe_id(s):
+    return pattern.sub('', s)
+
+%>
+
+<div class="row hide_print">
+    <div class="span12">
+        <h1 class="page-header">
+            ${_('Schedule For %s ') % festival}
+        </h1>
+    </div>
+</div>
+
+<div class="well hide_print" id="guide">
+    <div class="row">   
+        <div class="span6">
+            <h3>${_("Guide")}</h3>
+            <p>Click on the blue area for acts you plan to attend. Recommended acts are shown with the purple colour.</p>
+            <div class="guide_act_at_venue selected_act">                
+                <div class="act_title">
+                    <p><a class="act_link_guide">${_("Selected")}</a></p>
+                </div>
+            </div>
+<<<<<<< HEAD
+
+            <div class="act_at_venue recommended_act guide_act_at_venue">
+=======
+    
+            <div class="guide_act_at_venue recommended_act">
+>>>>>>> 59c1163d79f5e1c1fcb92c6279be7b750adddd3c
+                <div class="act_title">
+                    <p><a class="act_link_guide">${_("Recommended")}</a></p>
+                </div>
+            </div>
+<<<<<<< HEAD
+
+            <div class="act_at_venue guide_act_at_venue similar_act">
+=======
+    
+            <div class="guide_act_at_venue similar_act">
+>>>>>>> 59c1163d79f5e1c1fcb92c6279be7b750adddd3c
+                <div class="act_title">
+                    <p><a class="act_link_guide">${_("Similar to last selected")}</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="span4">
+            <span class="st_facebook_vcount"></span>
+            <span class="st_twitter_vcount"></span>
+            <span class="st_email_vcount"></span>
+            <span class="st_sharethis_vcount"></span>
+        </div>  
+        %if read_only:
+        <div class="span2 alert alert-block">
+            <p>${_("This schedule is read only.")} <a href="${new_schedule}">${_("Click to make your own.")}</a></p>
+        </div>        
+        %endif
+    </div>
+</div>
+
+
+<ul class="pager hide_print">
+    % if yesterday:
+    <li class="previous">
+        <a href="${yesterday}">&larr; ${_('Previous Day')}</a>
+    </li>
+    % endif
+    % if tomorrow:
+    <li class="next">
+        <a href="${tomorrow}">${_('Next Day')} &rarr;</a>
+    </li>
+    % endif
+</ul>
+
+<div class="well">
+<div class="row">    
+    <div class="span12">
+        <h2>${parse(current_day).strftime('%A %d %B %Y')}
+        </h2>
+                
+        <%
+            time_offset = 75
+            header_offset = 30
+            col_width = 175
+                            
+            def add_secs(d, secs):
+                return d + datetime.timedelta(0, secs)
+            
+            def is_selected(cid):
+                if cid in selected_acts:
+                    return "selected_act"
+                else:
+                    return ""
+        
+            start_day = all_acts[0]['start_time']
+            start_day = start_day - datetime.timedelta(minutes=start_day.minute)
+            
+            end_day = all_acts[-1]['end_time']
+            cur_time = start_day
+            
+            hours = int((end_day - start_day).total_seconds() / 3600 + 0.5)
+        %>
+        
+        <div style="height: ${(hours + 2) * pixels_in_hour}px;" class="schedule">
+            % for x in range(0, hours + 1):
+                <%
+                    p = header_offset + time_to_pixel(start_day, cur_time)
+                %>
+                                
+                <div style="top: ${p}px; height: ${pixels_in_hour}px;" class="act_time_row">
+                    <strong>${cur_time.strftime("%H:%M")}</strong>
+                </div>
+                
+                <%
+                    cur_time = add_secs(cur_time, 3600)
+                %>
+            % endfor
+            
+            % for idx, venue in enumerate(acts_at_venues):
+                <div style="left: ${time_offset + idx * col_width}px; text-align: center; width: 150px;" class="venue_row">
+                    <h3>${venue['name'].title()}</h3>
+                </div>
+                
+                <div style="left: ${time_offset + idx * col_width}px; top:${header_offset}px" class="venue_row">                    
+                    % for av in venue['acts_at_venues']:
+                    <% p = (time_to_pixel(start_day, av['start_time']), time_to_pixel(start_day, av['end_time']) - time_to_pixel(start_day, av['start_time'])) %>
+                    <div id="av_${av['id']}" class="act_at_venue ${is_selected(av['id'])}" style="${'top:%spx;height:%spx;' % p}">
+                        <div class="act_title">                            
+                            <p>
+                            <a class="act_link" data-act-id="${av['id']}" data-act="${av['act']}">${av['act']}</a>
+                            </p>
+                            <div id="av_fb_${av['id']}" class="hidden act_facebook_friends">                                
+                                <i class="icon-facebook-sign icon-large"></i>
+                            </div>
+                        </div>
+
+                        <div class="act_time">
+                            <p>${av['start_time'].strftime("%H:%M")} - ${av['end_time'].strftime("%H:%M")}</p>
+                        </div>                                
+
+                    </div>
+                    %endfor
+                </div>
+            % endfor
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal hide" id="act-modal">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3 id="modal-act-name">Act Name</h3>
+    </div>
+    <div class="modal-body">
+        <div id="act-no-friends" class="hidden">
+            <p>${_('None of your friends are seeing this act.') }</p>
+        </div>
+        
+        <div id="act-friends-list" class="hidden">
+            <p>${_('The following friends will be seeing this act:')}</p>
+            <ul id="friends-attending" class="unstyled">
+            </ul>		    
+        </div>
+        
+        <div id="not-facebook-connected" class="hidden">    
+            <p>${_('Connect with Facebook to see which of your friends are seeing this act.') }</p>
+        </div>
+        
+        <hr>
+        <div id="modal-contents">        
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a id="act-modal-close" class="btn btn-primary">Close</a>
+    </div>
+</div>
+
+<%block name="js">
+<script type='text/javascript'>
+var schedule_data = {};
+
+$(function(){
+    $("#act-modal").on("show", function() {
+        var the_act = $('#act-modal').data("act");
+        var act_id = $('#act-modal').data("act-id");
+        
+        $('#modal-act-name').text(the_act);
+        $('#friends-attending').empty();
+
+        $('#act-friends-list').addClass('hidden');
+        $('#act-no-friends').addClass('hidden');
+
+        $('#modal-contents').load('/schedule_modal_content/', { act: the_act })
+        
+        if(schedule_data.friends)
+        {
+            if(schedule_data.acts_to_friends[act_id]) {
+                var html = '';
+                var friends = schedule_data.acts_to_friends[act_id];
+                
+                $.each(friends, function(count, item) {
+                    var pic = '<img class="friend_avatar" src="' + schedule_data.friends[item].picture + '"></img>';
+                    html += '<li><p><h4>' + pic + schedule_data.friends[item].name + '</h4></p></li>';
+                });
+                if(friends.length > 0) {
+                    $('#friends-attending').append(html);
+                    $('#act-friends-list').removeClass('hidden');
+                }
+                else {
+                    $('#act-no-friends').removeClass('hidden');
+                }
+            }
+            else {
+                $('#act-no-friends').removeClass('hidden');
+            }
+        }
+    });
+    
+    $(".act_link").click(function(e){        
+        $("#act-modal").data("act", $(this).attr("data-act"));
+        $("#act-modal").data("act-id", $(this).attr("data-act-id"));
+                
+        $("#act-modal").modal();
+        return false;
+    });
+    
+    $("#act-modal-close").click(function(e) {
+        $("#act-modal").modal('hide');
+    });
+
+    $(".act_at_venue").click(function(e){
+        %if read_only:
+        alert("${_('This schedule is read only, click new schedule to make a new one')}");
+        %else:
+        $(this).toggleClass("selected_act");
+        $.post("/backend/record_act_at_venue", {'act_at_venue':$(this).attr('id').replace("av_", ""), 'uid':${uid}}, 
+        function (ids){
+            $('.act_at_venue').removeClass('similar_act');
+            $(ids).addClass('similar_act');
+        }, 'json');  
+        %endif      
+   });
+    
+    $("#fb-loader").on("facebookReady", function() {
+        FB.getLoginStatus(function(response) {
+            if(response.status === 'connected') {
+                getFacebookFriends();
+            }
+            else {
+                $('#not-facebook-connected').removeClass('hidden');
+            }
+        });
+    });    
+    
+    optimal_times();
+});
+
+function optimal_times(){
+    $.get("/backend/optimal_times", {'day':'${current_day}', 'festival':'${festival}'}, 
+            function (ids){
+                //$('.act_at_venue').removeClass('recommended_act');
+                $(ids).addClass('recommended_act');
+            }, 'json');
+}
+
+function getFacebookFriends()  {
+    FB.api('/me/friends', { fields : 'id, name, picture' }, function(response) {
+        if(response) {
+            items = [];
+            var all_friends = response.data;
+            var friend_map = { };
+            for(i in all_friends) {
+                items.push(all_friends[i].id)
+                friend_map[all_friends[i].id] = all_friends[i]
+            }            
+            
+            // Keep friends map in document
+            schedule_data.friends = friend_map;
+            schedule_data.acts_to_friends = {};
+
+            $.post('/backend/friends_acts_at_festival',
+                { friends: JSON.stringify(items), festival: '${festival}', day: '${current_day}' },
+                function(friends) {                    
+                    $.each(friends, function(countr, item) {                        
+                        if(!schedule_data.acts_to_friends[item['act_at_venue']]) {
+                            schedule_data.acts_to_friends[item['act_at_venue']] = [];
+                        }
+                        schedule_data.acts_to_friends[item['act_at_venue']].push(item['facebook_user_id']);                        
+                        $('#av_fb_' + item['act_at_venue']).removeClass('hidden');
+                    });
+                },
+                'json');
+        }
+    });
+}
+
+</script>
+</%block>
+

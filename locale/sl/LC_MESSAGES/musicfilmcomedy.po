@@ -1,0 +1,290 @@
+# Slovenian translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-04-04 17:44+1000\n"
+"PO-Revision-Date: 2012-04-01 20:20+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: sl <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3)\n"
+
+#: templates/act.html:9
+#, fuzzy, python-format
+msgid ""
+"festival appearances for %s in 2012. Reviews, info and recommendations."
+msgstr "Festival izgledu za %s v letu 2012. Pregledi, info in priporočila."
+
+#: templates/act.html:10
+#, python-format
+msgid "%s | Festival Tour Dates 2012"
+msgstr "%s | Festival turnejo datumi 2012"
+
+#: templates/act.html:14 templates/festival.html:17
+msgid "Flag incorrect information"
+msgstr "Zastavo nepravilne informacije"
+
+#: templates/act.html:34 templates/act.html:37
+msgid "unknown"
+msgstr "neznano"
+
+#: templates/act.html:43
+msgid "Back"
+msgstr "Nazaj"
+
+#: templates/act.html:93
+#, python-format
+msgid "%s is on at:"
+msgstr "%s je na na:"
+
+#: templates/act.html:166
+msgid "What people on twitter think"
+msgstr "Mislim, kaj ljudje na Cvrkutati"
+
+#: templates/base.html:60 templates/list_countries.html:5
+msgid "List By Country"
+msgstr "Seznam po državi"
+
+#: templates/base.html:65
+msgid "Search"
+msgstr "Iskanje"
+
+#: templates/base.html:69
+msgid "Feedback"
+msgstr "Povratne informacije"
+
+#: templates/base.html:72
+msgid "Language"
+msgstr "Jezik"
+
+#: templates/base.html:83
+msgid "Other"
+msgstr "Druge"
+
+#: templates/choose_language.html:2 templates/index.html:2
+#: templates/list_countries.html:2
+#: templates/list_festivals_from_country.html:2
+#: templates/search_festivals.html:2
+msgid ""
+"Music Film Comedy helps you decide what to see at a festival with great "
+"recommendations and info."
+msgstr ""
+"Glasba Film komedija vam odločijo, kaj želite videti na festivalu z veliko "
+"priporočila in info."
+
+#: templates/choose_language.html:3
+#, fuzzy
+msgid "Choose Language | The Best Act/Film Recommendations"
+msgstr "Iskanje festivali | Najboljši akta in Film priporočila"
+
+#: templates/choose_language.html:5
+msgid "Choose Language"
+msgstr "Izberite jezik"
+
+#: templates/festival.html:10 templates/recommend_acts.html:2
+#: templates/recommended_acts.html:2
+#, python-format
+msgid ""
+"Plan and get recommendations for what to see at %s. See reviews, lineup and "
+"act info."
+msgstr ""
+"Načrt in dobite priporočila za kaj želite videti na %s. Glej pregledi, "
+"Postrojavanje in akta info."
+
+#: templates/festival.html:11
+#, python-format
+msgid "%s | recommendations, reviews, line up and dates"
+msgstr "%s | priporočila, reviews, vrstica gor in datumi"
+
+#: templates/festival.html:42
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s."
+msgstr "Nimamo točne datume še, vendar je ponavadi v %s."
+
+#: templates/festival.html:44
+#, python-format
+msgid "We don't have dates for %s yet."
+msgstr "Nimamo datume za %s še."
+
+#: templates/festival.html:51
+msgid "Recommend Acts"
+msgstr "Priporočamo aktov"
+
+#: templates/festival.html:56
+msgid "Recommend For Today"
+msgstr "Priporočamo za danes"
+
+#: templates/festival.html:59
+#, python-format
+msgid "We don't have a lineup for %s yet."
+msgstr "Nimamo Postrojavanje za %s še."
+
+#: templates/festival.html:72
+msgid "Lineup:"
+msgstr "Postrojavanje:"
+
+#: templates/index.html:3
+msgid "MusicFilmComedy - Festivals and The Best Act/Film Recommendations"
+msgstr "MusicFilmComedy - festivali in najboljši akta in Film priporočila"
+
+#: templates/index.html:6
+msgid "Featured Festival"
+msgstr "Pokaže Festival"
+
+#: templates/index.html:9
+msgid "MusicFilmComedy allows you to find and plan what to see at a festival."
+msgstr ""
+"MusicFilmComedy omogoča iskanje in načrt, kaj želite videti na festival."
+
+#: templates/index.html:12
+msgid "e.g. summerfest, france, blues"
+msgstr "npr. summerfest, Francija, blues"
+
+#: templates/index.html:13
+msgid "Search Festivals"
+msgstr "Iskanje festivali"
+
+#: templates/index.html:16
+msgid ""
+"Please give us feedback if you find issues! We are still testing and would "
+"love any ideas or suggestions."
+msgstr ""
+"Prosim dajte nam povratne informacije Če ugotovite, da vprašanja! Smo še "
+"testiranje in bi radi koli ideje ali predloge."
+
+#: templates/index.html:22
+msgid "Upcoming Nearby Festivals"
+msgstr "Prihajajoči bližini festivali"
+
+#: templates/index.html:26
+msgid "Other Featured Festivals"
+msgstr "Drugi pokaže festivali"
+
+#: templates/index.html:38
+msgid "Upcoming Festivals"
+msgstr "Prihajajoči festivali"
+
+#: templates/index.html:46
+msgid "Popular Acts"
+msgstr "Priljubljena aktov"
+
+#: templates/list_countries.html:3
+#: templates/list_festivals_from_country.html:3
+#, fuzzy
+msgid "List Festivals By Country | The Best Act/Film Recommendations"
+msgstr "Iskanje festivali | Najboljši akta in Film priporočila"
+
+#: templates/list_festivals_from_country.html:19
+#: templates/search_festivals.html:30
+#, python-format
+msgid "We don't have the exact dates yet, but it's usually in %s"
+msgstr "Nimamo točne datume še, vendar je ponavadi v %s"
+
+#: templates/list_festivals_from_country.html:28
+#: templates/recommended_acts.html:23 templates/search_festivals.html:39
+msgid "View details"
+msgstr "Ogled podrobnosti"
+
+#: templates/recommend_acts.html:3
+#, python-format
+msgid "%s | Enter your preferences or get magical recommendations"
+msgstr "%s | Vnesite nastavitve ali dobite čaroven priporočila"
+
+#: templates/recommend_acts.html:7
+#, python-format
+msgid "Magical Recommendations for %s. "
+msgstr "Čaroven priporočila za %s. "
+
+#: templates/recommend_acts.html:9
+#, python-format
+msgid ""
+"Click the big button to get our recommendations for %s. Our recommendations "
+"are based on a magic mixture of popularity (facebook/twitter/web) and "
+"reviews."
+msgstr ""
+"Kliknite gumb velik priti naša priporočila za %s. Naša priporočila temeljijo"
+" na čarobno mešanico priljubljenosti (facebook, Cvrkutati, web) in "
+"recenzije."
+
+#: templates/recommend_acts.html:10
+msgid "Magical"
+msgstr "Čaroven"
+
+#: templates/recommend_acts.html:11
+msgid "or"
+msgstr "ali"
+
+#: templates/recommend_acts.html:12
+msgid "choose your preferences."
+msgstr "Izberite nastavitve."
+
+#: templates/recommend_acts.html:19
+msgid "Preferences"
+msgstr "Nastavitve"
+
+#: templates/recommend_acts.html:22
+msgid "Genres you are interested in:"
+msgstr "Zvrsti, ki vas zanimajo:"
+
+#: templates/recommend_acts.html:36
+msgid "Days:"
+msgstr "Dni:"
+
+#: templates/recommend_acts.html:48
+msgid "We don't have enough data about this festival to provide preferences."
+msgstr "Nimamo dovolj podatkov o tem festivalu zagotoviti preferencialov."
+
+#: templates/recommend_acts.html:53
+msgid "Magically with your preferences"
+msgstr "Čarobno z vaše nastavitve"
+
+#: templates/recommended_acts.html:3
+#, python-format
+msgid "%s | Recommendations"
+msgstr "%s | Priporočila"
+
+#: templates/recommended_acts.html:6
+#, python-format
+msgid "Recommended Acts for %s."
+msgstr "Priporočljivo aktov za %s."
+
+#: templates/recommended_acts.html:8
+msgid ""
+"Click on the acts to get the times, we're making this nicer at the moment "
+"and will have something better up soon."
+msgstr ""
+"Kliknite na akti priti časi, smo si kar to lepše v trenutku in bo nekaj "
+"bolje gor kmalu."
+
+#: templates/search_festivals.html:3
+msgid "Search Festivals | The Best Act/Film Recommendations"
+msgstr "Iskanje festivali | Najboljši akta in Film priporočila"
+
+#: templates/search_festivals.html:7
+msgid "Search Results"
+msgstr "Rezultati iskanja"
+
+#: templates/search_festivals.html:13
+msgid ""
+"No festivals found. We are trying to add more festivals all the time. If you"
+" have details for a festival that you think we should have please contact us"
+msgstr ""
+"Ni festivali, ugotovljeno. Smo poskušate dodati več festivali ves čas. Če "
+"imate podrobnosti za festival, ki misliš, da smo naj so nam pišite"
+
+#: templates/search_festivals.html:49
+msgid "Previous"
+msgstr "Prejšnje"
+
+#: templates/search_festivals.html:54
+msgid "Next"
+msgstr "Naslednji"
